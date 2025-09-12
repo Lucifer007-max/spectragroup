@@ -49,15 +49,15 @@ const About = () => {
   const services = [
 
     {
-      title: "X-ray System",
-      description: "Our X-ray team has extensive experience supporting more than 100 systems worldwide, covering all makes, models, and versions of ED-XRF/XRD analyzers and Optical Emission Spectrometers from manufacturers such as Thermo Fisher (ARL), PANalytical (Phillips), Bruker, Shimadzu, and others. With a strong background in the industry, our team has previously worked with leading organizations, including serving as Senior Service Engineers at Thermo Fisher Scientific, where they supported over 100 systems globally. As Senior Field Engineers at PANalytical (Phillips), they have provided expertise for more than 50 systems worldwide. Additionally, our team has served as Field Service Engineers, offering primary support for Bruker and Shimadzu systems, while also acting as Technical Experts, providing secondary support to ensure the seamless operation of X-ray analytical solutions.",
+      title: " Mission-Critical XRF &amp; OES Solutions",
+      description: "Spectra Group delivers expert support for XRF, XRD, and OES analyzers across the Middle East, Africa, and Turkey. Our team combines decades of global experience and deep industry expertise, providing advanced diagnostics, maintenance, and application support to ensure precision, reliability, and maximum uptime in mission-critical industrial operations. Aligned with leading global instrument manufacturers, we bring trusted solutions and technical excellence to industries relying on high-performance analytical systems, helping clients achieve accuracy, compliance, and operational efficiency.",
       // icon: <FlagTriangleLeft className="w-8 h-8" />,
       gridClass: "md:col-span-1 row-span-1",
       bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
     },
     {
-      title: "PGNAA Analyzer",
-      description: "A Team with over 100 man-years of experience in PGNAA, who have in the past, have worked with various original equipment manufacturers at senior positions. Our team brings over 100 man-years of experience in PGNAA, having worked in senior positions with various original equipment manufacturers. As Sales & Service Managers at Thermo Fisher Scientific PGNAA systems, we have sold and supported over 150 systems across the Middle East, Africa, and worldwide. As Senior Service Engineers at Thermo Fisher Scientific, we have provided expert support for more than 150 systems, including BMA, CBA, CBGN, CBX, OMNI, FSA, and EBA. Our experience extends further as Senior Field Engineers specializing in PGNAA, having worked with Thermo Fisher, Scantech, and other leading manufacturers. In addition, as Field Service Engineers, the seamless operation of PGNAA solutions.",
+      title: "PGNAA Expertise for Mission-Critical Operations",
+      description: "With over 100 man-years of combined experience in PGNAA technology, our team delivers unmatched expertise in designing, supporting, and optimizing advanced analytical solutions. Having managed and supported over 150 PGNAA systems with Thermo Fisher Scientific, we bring deep knowledge of system deployment, performance optimization, and customer-centric service across the Middle East, Africa, and worldwide. Our engineers combine hands-on field experience with technical mastery, ensuring seamless operation, precise measurements, and maximum uptime for mission-critical industries. From advanced diagnostics to application support, we provide trusted solutions that enable operational efficiency, reliability, and long-term performance.",
       // icon: <Eye className="w-8 h-8" />,
       gridClass: "md:col-span-1 row-span-1",
       bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
@@ -82,12 +82,12 @@ const About = () => {
 
   const images = [
     { src: Cement, alt: "Cement", title: 'Cement' },
-    { src: Power, alt: "Power", title: 'Power' },
-    { src: Mineral, alt: "Mineral", title: 'Mineral' },
+    { src: Mineral, alt: "Mining & Mineral", title: 'Mining & Mineral' },
+    { src: Power, alt: "Coal", title: 'Coal' },
+    { src: Iron, alt: "Steel", title: 'Steel' },
     { src: Oil, alt: "Oil & Gas", title: 'Oil & Gas' },
-    { src: Iron, alt: "Iron & Steel", title: 'Iron & Steel' },
-    { src: Legal, alt: "Lubrication & Glass Manufacturing", title: 'Lubrication & Glass Manufacture' },
-    { src: royal, alt: "Petrochemical", title: 'Petro Chemical' },
+    // { src: Legal, alt: "Lubrication & Glass Manufacturing", title: 'Lubrication & Glass Manufacture' },
+    // { src: royal, alt: "Petrochemical", title: 'Petro Chemical' },
   ];
  
   const yValues = [
@@ -166,14 +166,14 @@ const About = () => {
           </motion.section>
 
           {/* Our Purpose Section */}
-          <motion.section
+          {/* <motion.section
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className="space-y-6"
           >
             <div className="border-l-4 border-red-500 pl-3">
-              {/* <h2 className="text-2xl text-dark font-bold">Our SERVICES</h2> */}
+                <h2 className="text-2xl text-dark font-bold">Our SERVICES</h2> 
               <motion.h2
                 className="text-4xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
               >
@@ -203,7 +203,7 @@ const About = () => {
 
               Backed by a team of highly skilled professionals with over 150 man-years of experience, Spectar is committed to innovation, sustainability, and delivering world-class technical excellence.
             </p>
-          </motion.section>
+          </motion.section> */}
         </section>
       </motion.div>
       {/* SERVICE CARDS */}
@@ -231,7 +231,7 @@ const About = () => {
               FOCUS
             </motion.span>
           </motion.h2>
-          <div className="py-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 px-4 sm:px-8">
+          <div className="py-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-4 sm:px-8">
             {images.map((item, index) => {
 
               return (

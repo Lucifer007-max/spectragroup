@@ -8,15 +8,22 @@ import Radioactive from '../assets/images/product/Radioactive.jpg'
 export const services = [
 
   {
-    title: "Mission",
-    description: "GeoSpectra Technical Services LLC, having its registered office in Dubai, United Arab Emirates, focuses on providing high-end, cost-effective technical & application support to a range of Analytical Instruments (such as XRF/XRD/OES Analyzers) in “Mission Critical” environments. We also provide products and services in the field of Radiation Technology (Radio Isotopes supply and radioactive waste management) and in the field of Environmental & Geological Engineering.",
+    title: "Spectra Group – Empowering Industries, Shaping a Sustainable Future",
+    description: `
+Headquartered in Dubai, Spectra Group, through its companies Spectra Line Industrial LLC
+and GeoSpectra Technical Services LLC, delivers advanced solutions in analytical
+instrumentation, radiation technology, and industrial engineering across the Middle East,
+Africa, and Turkey. We specialize in XRF, XRD, OES, and PGNAA analyzers, radiation
+safety, isotope supply, and waste management. Committed to innovation, reliability, and
+training, we empower industries to achieve precision, efficiency, and sustainable growth in
+mission-critical environments.`,
     icon: <FlagTriangleLeft className="w-8 h-8" />,
     gridClass: "md:col-span-1 row-span-1",
     bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
   },
   {
     title: "Vision",
-    description: "To be a globally recognized leader in delivering innovative and reliable technical solutions for analytical instruments, radiation technology, and environmental and geological engineering. We aim to set the benchmark for excellence in mission-critical environments by ensuring sustainability, safety, and efficiency in every project we undertake.",
+    description: "To be a globally recognized leader in providing innovative, reliable, and high-performance solutions in analytical instrumentation, radiation technology, and environmental and geological engineering. Spectra Group strives to set the benchmark for excellence in mission-critical industries, delivering every project with a commitment to sustainability, safety, and operational efficiency, while empowering industries worldwide to achieve precision and long-term growth.",
     icon: <Eye className="w-8 h-8" />,
     gridClass: "md:col-span-1 row-span-1",
     bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
@@ -119,37 +126,37 @@ export const servicesList = [
   {
     title: "Dedicated Support Engineer",
     description:
-      "We assign a dedicated engineer to each site & system to ensure round-the-clock support availability.",
+      "A personal expert assigned to your system, providing guidance, troubleshooting, and proactive solutions tailored to your operations.",
     img: ENG,
   },
   {
     title: "24x7 Remote Support",
     description:
-      "We provide 24x7 remote assistance to your team through phone, email, and website.",
+      "Round-the-clock remote assistance to monitor performance and resolve issues quickly, keeping your operations running smoothly.",
     img: time,
   },
   {
-    title: "On-Job Training",
+    title: "Onsite &amp; Offsite Training",
     description:
-      "Your team will become self-sufficient and capable enough to handle emergency repairs and routine maintenance.",
+      "Hands-on and remote training programs for operators and technical staff to maximize system efficiency and confidence.",
     img: Traning,
   },
   {
-    title: "Maintenance & Support Agreement",
+    title: "Maintenance &amp; Support Agreements",
     description:
-      "We provide cost-effective Maintenance Agreement packages with various multi-layered support options.",
+      "Flexible agreements covering preventive maintenance, repairs, and system optimization, ensuring long-term reliability and uptime.",
     img: aggrement,
   },
   {
-    title: "Periodic System Validation",
+    title: "Periodic System Validation &amp; Calibration",
     description:
-      "We conduct complete system validation at a competitive price to ensure optimal performance.",
+      "Regular calibration and validation to maintain measurement accuracy, compliance, and process integrity for mission-critical operations.",
     img: validation,
   },
   {
     title: "Radioactive Source Supply",
     description:
-      "We support and operate existing PGNAA systems, including radioactive source replenishment.",
+      "Safe and reliable supply of radioactive isotopes with guidance to ensure compliance and uninterrupted system operation.",
     img: Radioactive
   },
 ];
@@ -157,34 +164,44 @@ export const servicesList = [
 
 export const accordionData = [
   {
-    title: "BREAKDOWN MAINTENANCE",
+    title: "What kind of support do you provide for PGNAA systems?",
     content:
-      "GeoSpectra provides various levels of breakdown response, from urgent instant response to cost-effective mutually-agreeable-time response. The fastest response is available to customers with a maintenance agreement.",
+      "We offer complete support, including maintenance, troubleshooting, remote and onsite service, training, calibration, validation, and radioactive source supply.",
   },
   {
-    title: "SPARE PARTS SUPPLY",
+    title: "Can we customize a service plan for our specific needs?",
     content:
-      "GeoSpectra sources original spare parts for a wide range of equipment. We maintain strategic stock levels, ensuring engineers are well-equipped with spare parts even in rapid response breakdown situations.",
+      "Yes. We provide flexible plans, including Product Support Agreements, Time &amp; Material services, and spare parts supply tailored to your operations.",
   },
   {
-    title: "REFERENCE MATERIALS & CONSUMABLES SUPPLY",
+    title: "How quickly can your team respond to service requests?",
     content:
-      "We supply Certified Reference Material (CRM), Reference Material (RM), and Calibration Standards. Additionally, we provide consumables like sample cups, X-ray film, binder, and flux.",
+      "We offer 24/7 premium support for mission-critical systems and an 8x5 standard plan for business-hour coverage—both providing timely remote and onsite assistance.",
   },
   {
-    title: "TRAINING SERVICES",
+    title: "Do you provide training for our operators and technical staff?",
     content:
-      "GeoSpectra offers on-site training for personnel and scheduled training courses at various locations. Our training ensures optimal operation and maintenance of your equipment.",
+      "Yes. We offer onsite and offsite training to ensure safe handling, efficient operation, and maximum system performance.",
   },
   {
-    title: "INSTRUMENT CALIBRATION",
+    title: "How do you ensure accuracy and reliability of PGNAA systems?",
     content:
-      "We provide complete calibration services, ensuring traceability to international standards. Our expertise includes XRF, XRD, and SICK continuous emission monitoring systems.",
+      "Through regular validation, calibration, preventive maintenance, and expert application support, ensuring precise measurements and smooth operations.",
   },
   {
-    title: "CALIBRATION MAINTENANCE",
+    title: "Can you supply spare parts for PGNAA systems?",
     content:
-      "GeoSpectra monitors your equipment calibration on-site or remotely, making necessary adjustments to maintain accuracy and compliance.",
+      "Absolutely. We provide genuine and compatible spare parts, ensuring minimal downtime and continued reliable performance of your analyzers.",
+  },
+   {
+    title: "Do you assist with system upgrades or technology enhancements?",
+    content:
+      "Yes. Our team offers upgrade support and retrofitting solutions, helping systems stay current with the latest technology and maintain optimal performance.",
+  },
+  {
+    title: "How do you ensure safety and regulatory compliance?",
+    content:
+      "We provide radiation safety guidance, source handling protocols, and compliance support, ensuring your operations meet industry standards while maintaining safe working conditions.",
   },
 ];
 

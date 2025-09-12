@@ -139,8 +139,8 @@ const Hero = () => {
             <motion.h2 className="font-orbitron text-2xl mx-3 md:text-4xl font-bold text-light mb-8 flex flex-wrap" >GROUP</motion.h2>
           </div>
           <div className='flex '>
-            <motion.p className="mr-2 text-customOrange font-bold font-orbitron text-2xl"><motion.a href="https://www.spectraline.ae/">SPECTRA LINE</motion.a></motion.p>
-            <motion.p className="mx-2 text-customOrange font-bold font-orbitron text-2xl"><motion.a href="https://www.geospectratech.com/">GEO SPECTRA</motion.a></motion.p>
+            <motion.p className="mr-4 text-customOrangeDark font-bold font-orbitron text-2xl"><motion.a href="https://www.spectraline.ae/">SPECTRA LINE</motion.a></motion.p>
+            <motion.p className="mx-4 text-customOrangeDark font-bold font-orbitron text-2xl"><motion.a href="https://www.geospectratech.com/">GEO SPECTRA</motion.a></motion.p>
           </div>
 
           <motion.p
@@ -267,7 +267,7 @@ const Hero = () => {
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="inline-block text-dark"
+              className="inline-block text-gray-400"
             >
               OUR
             </motion.span>
@@ -396,7 +396,7 @@ const Hero = () => {
       </section>
 
       {/* Bottom Section */}
-      <section className="py-20 ">
+      {/* <section className="py-20 ">
         <motion.h2
           className="text-4xl md:text-6xl sm:text-4xl  lg:text-7xl  py-20  font-bold tracking-tighter leading-none text-center"
         >
@@ -420,10 +420,10 @@ const Hero = () => {
         </motion.h2>
         <FeatureGrid />
 
-      </section>
-      <AcquisitionsSection />
+      </section> */}
+      {/* <AcquisitionsSection /> */}
       {/* <Media /> */}
-      <Product />
+      {/* <Product /> */}
 
       <MultiProductSlider />
     </>

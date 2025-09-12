@@ -14,7 +14,8 @@ module.exports = {
         primary: '#066aab',
         dark: '#121212',
         light: '#ffffff',
-        customOrange: "#b84e4a"
+        customOrange: "#b84e4a",
+        customOrangeDark: "#ff0000"
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

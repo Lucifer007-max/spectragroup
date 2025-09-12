@@ -14,7 +14,7 @@ const cards = [
     img: "https://www.emirates247.com/polopoly_fs/1.702535.1677238865!/image/image.jpg",
   },
   {
-    title: "OEM is Bruker",
+    title: "Bruker",
     bg: "bg-blue-500",
     img: "https://www.bruker.com/content/dam/global/logos/logo.svg",
   },

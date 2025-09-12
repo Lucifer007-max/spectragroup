@@ -14,27 +14,24 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-footer2 border-t border-light-800">
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-4 py-6">
           {/* Top Section */}
-          <div className="grid md:grid-cols-3 gap-12 mb-16 place-items-center">
+          <div className="grid md:grid-cols-3 gap-12 mb-8 mt-5 place-items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
               className="w-full text-left"
             >
-              <h4 className="font-space-grotesk text-xl font-bold mb-4">Quick Links</h4>
-              <ul className="space-y-2 px-3">
-                {['Home', 'Services', 'Projects', 'Contact'].map((item, index) => (
-                  <motion.li
-                    key={index}
-                    whileHover={{ x: 5 }}
-                    className="text-light hover:text-black transition-colors  before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-[2px] before:bg-black before:transition-all before:duration-300 hover:before:w-full"
-                  >
-                    <a href={`#${item.toLowerCase()}`}>{item}</a>
-                  </motion.li>
-                ))}
-              </ul>
+              {/* <h4 className="font-space-grotesk text-xl font-bold mb-4">Quick Links</h4> */}
+              <div className="space-y-2 px-3 text-light">
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}><h4 className="font-space-grotesk text-xl font-bold mb-4" >Spectraline Industrial Equipment Trading LLC</h4></motion.div>
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>PO: 11675, Dubai, United Arab Emirates</motion.div>
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>TRN: 100487282400003</motion.div>
+                <motion.div className="mt-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}><h4 className="font-space-grotesk text-xl font-bold my-4">Geo Spectra Technical Services LLC</h4></motion.div>
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>PO: 214634, Dubai, United Arab Emirates</motion.div>
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>TRN: 10048728200003</motion.div>
+              </div>
             </motion.div>
 
             {/* Location */}
@@ -46,13 +43,10 @@ const Footer = () => {
             >
               <h4 className="font-space-grotesk text-xl font-bold">Location</h4>
               <p className="">
-                211 KML Business Center, Al meydan Street <br /> Dubai, United Arab Emirates
-              </p>
-              <p className="">
-                Spectraline Inustrial Equipment Trading LLC PO 11675   Dubai, United Arab Emirates
-              </p>
-              <p className="">
-                GeoSpectra Technical Services LLC PO 214634 <br /> Dubai United Arab Emirates
+                Visiting Address:<br />
+                211, KML Business Centre,
+                Al Meydan Street, Al Quoz 1
+                Dubai, United Arab Emirates
               </p>
             </motion.div>
 
