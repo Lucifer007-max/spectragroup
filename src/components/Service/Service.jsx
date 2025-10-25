@@ -9,7 +9,7 @@ import Breadcrumb from '../Breadcrumb/Breadcrumb'
 import { useMediaQuery } from 'react-responsive'
 import support from '../../assets/images/service/supportService.jpg'
 import Accordion from './Accordion'
-export default function Service({ title, content, pageTitle, TagLine }) {
+export default function Service({ title, content, pageTitle, TagLine, accordion , service}) {
   const containerRef = useRef(null)
   const sectionRef = useRef(null)
   const isInView = useInView(sectionRef, { once: false, amount: 0.1 })
@@ -106,7 +106,7 @@ export default function Service({ title, content, pageTitle, TagLine }) {
             viewport={{ once: true }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {servicesList.map((service, index) => (
+            {service.map((service, index) => (
               <motion.div
                 key={index}
                 className="relative bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300"
@@ -136,7 +136,7 @@ export default function Service({ title, content, pageTitle, TagLine }) {
 
         </div>
         <div className='py-10'>
-          <Accordion />
+          <Accordion accordion={accordion}/>
 
         </div>
       </div>

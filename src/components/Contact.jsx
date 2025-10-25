@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import Breadcrumb from './Breadcrumb/Breadcrumb';
 import contactBG from '../assets/images/backgrounds/contactBG.png';
+import InteractiveTiles from './InteractiveTiles';
 const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
   const formFields = [
@@ -86,6 +87,10 @@ const Contact = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10 py-20">
+
+          <InteractiveTiles/>
+
+        
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

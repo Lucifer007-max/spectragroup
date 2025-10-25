@@ -6,6 +6,7 @@ import rays from '../assets/images/product/rays.webp'
 import { GlowingCard } from './card/GlowingCard'
 import { itemAnimation } from '../utils/animation'
 import mission from '../assets/images/backgrounds/experties.jpg';
+import ServicePortfolio from './Portfolio'
 
 const Expertise = () => {
     const sectionRef = useRef(null)
@@ -44,7 +45,7 @@ const Expertise = () => {
                                 transition={{ duration: 0.8 }}
                                 className="inline-block text-dark"
                             >
-                                OUR
+                                Legacy of Expertise
                             </motion.span>
                             <motion.span
                                 initial={{ x: 100, opacity: 0 }}
@@ -53,7 +54,7 @@ const Expertise = () => {
                                 className="inline-block ml-2 md:ml-4"
                                 style={{ WebkitTextStroke: '1px black', color: 'transparent' }}
                             >
-                                EXPERTISE
+                                – Growing Through Understanding
                             </motion.span>
                         </motion.h2>
                     </div>
@@ -61,11 +62,20 @@ const Expertise = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }} className="text-gray-600 leading-relaxed">
-                        At Spectra, we take pride in our extensive geographical presence, delivering top-tier services across multiple regions. Our expertise spans North Africa, the Middle East, and South Asia, ensuring our clients receive tailored solutions backed by industry-leading experience.
-
-                        We are actively engaged in Algeria, Egypt, Jordan, Nigeria, Lebanon, Ethiopia, Morocco, Yemen, Oman, Libya, Pakistan, Saudi Arabia, Senegal, Qatar, Tanzania, Tunisia, Turkey, South Africa, UAE, India, Zambia, and Turkmenistan. Through our robust network and strategic partnerships, we bring cutting-edge solutions to these regions, addressing diverse market needs and industry challenges.
-
-
+                        Since our founding in 2014, Spectra Group has believed that true expertise comes from
+                        understanding real-world challenges. We began with a vision to provide high-quality
+                        technical solutions and services for analytical instruments, process analyzers, and radiation
+                        systems. But very quickly, we realized that technology alone is not enough.
+                        Across industries like cement, minerals, steel, oil &amp; gas, and pharmaceuticals, we observed
+                        recurring challenges: downtime caused by operational gaps, inconsistent analyzer results,
+                        and uncertainty in radiation safety practices. These experiences shaped our philosophy—our
+                        mission became not just to deliver instruments or services, but to partner with our
+                        customers, understand their pain points, and evolve solutions that truly add value.
+                        From that moment, every decision we made was guided by the needs of our customers. We
+                        began deploying engineers across the Middle East, Africa, and Turkey to ensure faster
+                        onsite support. We developed hands-on training programs, preventive maintenance
+                        schedules, and regulatory compliance guidance. With each project, we learned, adapted,
+                        and enhanced our services to ensure reliability, safety, and operational excellence.
                     </motion.p>
                 </motion.section>
             </section>
@@ -92,10 +102,9 @@ const Expertise = () => {
                             {expertiesCards.map((service, index) => (
                                 <motion.div
                                     key={index}
-                                    className={`${service.gridClass}`}
-                                    variants={itemAnimation}
+                                    className={`p-6 rounded-2xl shadow-md ${service.bgClass} ${service.gridClass} h-full flex flex-col`}
                                 >
-                                    <GlowingCard className={`${service.bgClass} h-full rounded-lg backdrop-blur-sm  border border-white/10 hover:border-white/20 transition-all duration-500  group cursor-pointer overflow-hidden`}>
+                                    <div className={`${"service.bgClass"} h-full rounded-lg backdrop-blur-sm    transition-all duration-500  group cursor-pointer overflow-hidden`}>
                                         <div className="relative h-full p-6 flex flex-col">
                                             <motion.div
                                                 whileHover={{ scale: 1.2, rotate: 360 }}
@@ -121,7 +130,7 @@ const Expertise = () => {
                                                 {service.description}
                                             </motion.p>
                                         </div>
-                                    </GlowingCard>
+                                    </div>
                                 </motion.div>
                             ))}
                         </div>
@@ -131,6 +140,7 @@ const Expertise = () => {
             <sction>
                 <div className='relative container mx-auto px-4 "'>
                     <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 py-20 gap-6">
+                        <ServicePortfolio />
                         <section className="py-20">
                             <div className="grid md:grid-cols-2 gap-12 items-center">
                                 <motion.div
@@ -146,7 +156,7 @@ const Expertise = () => {
                                             WebkitTextFillColor: 'transparent'
                                         }}
                                     >
-                                        Gamma Ray (PGNAA)
+                                        Mission-Critical PGNAA Solutions
                                     </motion.h1>
                                     <motion.div
                                         initial={{ opacity: 0, x: -50 }}
@@ -161,7 +171,20 @@ const Expertise = () => {
                                             viewport={{ once: false }}
                                             className="list-decimal list-inside space-y-4"
                                         >
-                                            {Gammaexperties.map((service, index) => (
+                                            {/* <motion.p
+
+                                                initial={{ opacity: 0, x: -50 }}
+                                                whileInView={{ opacity: 1, x: 0 }}
+                                                transition={{ duration: 0.5, delay: 0.1 }}
+                                                // viewport={{ once: false }}
+                                                className="text-md text-gray-700 font-medium"
+                                            >
+                                                We provide expert support for process analyzers, enabling real-time monitoring, precise
+                                                measurements, and high uptime. Our team has extensive experience in optimizing systems
+                                                for maximum performance, tailored to your operational needs.
+
+                                            </motion.p> */}
+                                             {Gammaexperties.map((service, index) => (
                                                 <motion.li
                                                     key={index}
                                                     initial={{ opacity: 0, x: -50 }}
@@ -214,7 +237,7 @@ const Expertise = () => {
                                         whileHover={{ scale: 1.05 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <img src={'https://th.bing.com/th/id/R.83c80af28f9375a651cfda98c98ecf95?rik=InNCUhpwC%2fOwUg&riu=http%3a%2f%2fwww.vikasdiagnostics.com%2fwp-content%2fuploads%2f2017%2f06%2fdigital-xray.png&ehk=DP8IlRBh7kJSGikLTx4niLlxyqHaQAYeLNHo%2fEEU%2bPk%3d&risl=&pid=ImgRaw&r=0'}  alt="X ray"   className="w-full h-full object-cover" />
+                                        <img src={'https://th.bing.com/th/id/R.83c80af28f9375a651cfda98c98ecf95?rik=InNCUhpwC%2fOwUg&riu=http%3a%2f%2fwww.vikasdiagnostics.com%2fwp-content%2fuploads%2f2017%2f06%2fdigital-xray.png&ehk=DP8IlRBh7kJSGikLTx4niLlxyqHaQAYeLNHo%2fEEU%2bPk%3d&risl=&pid=ImgRaw&r=0'} alt="X ray" className="w-full h-full object-cover" />
                                         <motion.div
                                             className="absolute inset-0 bg-gradient-to-t from-customOrange to-transparent opacity-1"
                                             whileHover={{ opacity: 0.6 }}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Service from './Service/Service'
+import { accordionData, servicesList } from '../utils/data';
 
 export default function PGNAAService() {
 
@@ -20,6 +21,6 @@ while we take care of the systems that make it all possible.`;
   const pageTitle = `Process Analyzers Support & Services`;
   const TagLine = `Prompt Gamma Neutron Activation Analysis (PGNAA)`;
   return (
-    <Service title={'Process Analyzers'} content={data} pageTitle={pageTitle} TagLine={TagLine} />
+    <Service title={'Process Analyzers'} content={data} pageTitle={pageTitle} TagLine={TagLine} accordion={accordionData} service={servicesList}/>
   )
 }

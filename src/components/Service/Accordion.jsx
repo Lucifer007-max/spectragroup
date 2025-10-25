@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { accordionData } from '../../utils/data';
 import { motion } from 'framer-motion';
-export default function Accordion() {
+export default function Accordion({accordion}) {
     const [openIndex, setOpenIndex] = useState(null);
 
     const toggleAccordion = (index) => {
@@ -38,7 +38,7 @@ export default function Accordion() {
             <div className="w-full max-w-5xl mx-auto space-y-6">
 
 
-                {accordionData.map((item, index) => (
+                {accordion.map((item, index) => (
                     <motion.div
                         key={index}
                         className="border border-gray-300 rounded-lg overflow-hidden shadow-lg"

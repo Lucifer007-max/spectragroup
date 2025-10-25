@@ -27,9 +27,9 @@ const navLinks = [
     ],
   },
   { title: "TRAINING", path: "training" },
-  { title: "EXPERTISE", path: "expertise" },
-  { title: "OUR NETWORK", path: "our-network" },
-  { title: "CONTACT US", path: "contact-us" },
+  { title: "LEGACY OF EXPERTISE", path: "expertise" },
+  { title: "GLOBAL CONNECTIONS", path  : "our-network" },
+  { title: "LET’s CONNECT", path: "contact-us" },
 ];
 
 
@@ -89,7 +89,7 @@ export default function WillstarNavbar() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             {navLinks.map((link, index) => (
               <div key={index} className="relative">
                 {/* Parent Link */}
@@ -103,7 +103,7 @@ export default function WillstarNavbar() {
                       navigteByURL(link.path);
                     }
                   }}
-                  className="text-custom nav_custom hover:text-dark text-md tracking-wider transition-colors cursor-pointer flex items-center"
+                  className="text-custom font-semibold nav_custom hover:text-dark text-lg tracking-wider transition-colors cursor-pointer flex items-center"
                   whileHover={{ y: -2 }}
                   whileTap={{ y: 0 }}
                 >

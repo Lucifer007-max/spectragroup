@@ -41,17 +41,33 @@
 
 // export default GlobeComponent;
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Globe from "react-globe.gl";
 import { globeData } from "../../utils/data";
 
 const GlobeComponent = () => {
   const [places, setPlaces] = useState(globeData?.features);
+  const globeRef = useRef();
+
+  useEffect(() => {
+    if (!globeRef.current) return;
+
+    const controls = globeRef.current.controls();
+    controls.autoRotate = true;         // ✅ Enable auto-rotation
+    controls.autoRotateSpeed = 0.9;     // ✅ Adjust speed (positive = clockwise)
+    controls.enableZoom = false;        // Optional: disable zoom for aesthetics
+
+    // Re-render on each frame
+    globeRef.current.renderer().setAnimationLoop(() => {
+      controls.update();
+    });
+  }, []);
 
   return (
     <div className="w-full flex justify-center items-center">
       <Globe
-        width={500} // Adjust width
+        ref={globeRef}
+        width={600} // Adjust width
         height={500} // Adjust height
         globeImageUrl="https://unpkg.com/three-globe@2.41.12/example/img/earth-water.png"
         backgroundColor="#fff"

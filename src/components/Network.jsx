@@ -83,12 +83,23 @@ const NetWork = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }} className="text-gray-600 leading-relaxed">
-                        At Spectra, we take pride in our extensive geographical presence, delivering top-tier services across multiple regions. Our expertise spans North Africa, the Middle East, and South Asia, ensuring our clients receive tailored solutions backed by industry-leading experience.
+                        Since 2014, Spectra Group has been building more than just a network of services—we
+                        have been forging lasting partnerships across industries and continents. From our
+                        headquarters in Dubai, our expertise spans the Middle East, Africa, Turkey, and beyond,
+                        supporting companies in cement, minerals, steel, oil &amp; gas, and pharmaceuticals.
+                        Every connection we form is guided by a single principle: understand challenges, deliver
+                        reliable support, and build lasting trust. We have learned that true operational success
+                        comes from listening to customers, addressing their pain points, and evolving our solutions
+                        to meet their unique needs.
+                        Our global reach ensures that wherever our clients operate, Spectra Group is
+                        there—providing mission-critical support, preventive maintenance, training, and compliance
 
-                        We are actively engaged in Algeria, Egypt, Jordan, Nigeria, Lebanon, Ethiopia, Morocco, Yemen, Oman, Libya, Pakistan, Saudi Arabia, Senegal, Qatar, Tanzania, Tunisia, Turkey, South Africa, UAE, India, Zambia, and Turkmenistan. Through our robust network and strategic partnerships, we bring cutting-edge solutions to these regions, addressing diverse market needs and industry challenges.
+                        guidance. By strategically deploying outstationed engineers across key regions, we deliver
+                        rapid response and uninterrupted operations, combining local presence with global
+                        expertise.
                     </motion.p>
                 </motion.section>
-                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 py-10 gap-6">
+                {/* <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 py-10 gap-6">
                     {jsonData.features.map((feature, index) => (
                         <motion.div
                             key={index}
@@ -129,7 +140,7 @@ const NetWork = () => {
                             />
                         </motion.div>
                     ))}
-                </div>
+                </div> */}
 
                 {/* <div className="flex-1 grid grid-cols-2 grid-rows-2 gap-2 bg-purple-600 p-8">
                     {["Americas", "Asia Pacific", "Europe", "Middle East and Africa"].map(

@@ -141,12 +141,18 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }} className="text-gray-600 leading-relaxed">
-              Spectar is a global leader in providing high-end, cost-effective technical solutions in quality & process control, environmental protection, radiation technology, and geological & mining engineering. We specialize in serving Cement & Coal, Iron & Steel, Oil & Gas, and other mineral industries worldwide, offering advanced analytical instrumentation and radiation solutions
-            </motion.p>
+              
+              Empowering Industries, Shaping a Sustainable Future
+Headquartered in Dubai, UAE, Spectra Group is a globally recognized leader in providing
+innovative, reliable, and high-performance technical solutions across the Middle East, Africa,
+and Turkey. Through our flagship companies, Spectra Line Industrial LLC and
+GeoSpectra Technical Services LLC, we serve mission-critical industries including
+Cement, Coal, Iron &amp; Steel, Oil &amp; Gas, and Minerals, delivering solutions that drive
+operational excellence, efficiency, and sustainability. </motion.p>
           </motion.section>
 
           {/* CEO Quote Section */}
-          <motion.section
+          {/* <motion.section
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -159,11 +165,10 @@ const About = () => {
             />
             <div className="space-y-4">
               <p className="text-lg font-semibold text-gray-800">
-                "With our talented people, empowered teams, and world-class technologies, we are creating superior value for our stakeholders and enabling a more sustainable and resource-efficient future."
-              </p>
+                  </p>
               <p className="text-gray-600 font-medium">- Lorem, SPECTAR CEO</p>
             </div>
-          </motion.section>
+          </motion.section> */}
 
           {/* Our Purpose Section */}
           {/* <motion.section
