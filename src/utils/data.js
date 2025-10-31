@@ -4,7 +4,14 @@ import ENG from "../assets/images/product/dedicated.jpg"
 import Traning from "../assets/images/product/training.jpg"
 import aggrement from '../assets/images/product/aggrement.jpg'
 import validation from '../assets/images/product/Validation.jpg'
-import Radioactive from '../assets/images/product/Radioactive.jpg'
+import Radioactive from '../assets/images/radiation-warning.png';
+import {
+  ChatBubbleLeftRightIcon,
+  MapPinIcon,
+  EnvelopeIcon,
+  GlobeAltIcon,
+} from "@heroicons/react/24/outline";
+
 export const services = [
 
   {
@@ -130,7 +137,7 @@ export const servicesList = [
     img: ENG,
   },
   {
-    title: "24x7 Remote Support",
+    title: "24/7 Remote Support",
     description:
       "Round-the-clock remote assistance to monitor performance and resolve issues quickly, keeping your operations running smoothly.",
     img: time,
@@ -160,6 +167,124 @@ export const servicesList = [
     img: Radioactive
   },
 ];
+
+export const servicesList2 = [
+  {
+    title: "Dedicated Support Engineer",
+    description:
+      "A personal expert assigned to your system, providing guidance, troubleshooting, and proactive solutions tailored to your operations.",
+    img: ENG,
+  },
+  {
+    title: "24/7 Remote Support",
+    description:
+      "Round-the-clock remote assistance to monitor performance and resolve issues quickly, keeping your operations running smoothly.",
+    img: time,
+  },
+  {
+    title: "Onsite & Offsite Training",
+    description:
+      "Hands-on and remote training programs for operators and technical staff to maximize system efficiency and confidence.",
+    img: Traning,
+  },
+  {
+    title: "Maintenance & Support Agreements",
+    description:
+      "Flexible agreements covering preventive maintenance, repairs, and system optimization, ensuring long-term reliability and uptime.",
+    img: aggrement,
+  },
+  {
+    title: "Periodic System Validation & Calibration",
+    description:
+      "Regular calibration and validation to maintain measurement accuracy, compliance, and process integrity for mission-critical operations.",
+    img: validation,
+  },
+  {
+    title: "Radioactive Source Supply",
+    description:
+      "Safe and reliable supply of radioactive isotopes with guidance to ensure compliance and uninterrupted system operation.",
+    img: Radioactive,
+  },
+];
+
+export const servicesList3 = [
+  {
+    title: "Personal Technical Advisor",
+    description:
+      "Your dedicated expert provides tailored guidance, system troubleshooting, and customized solutions aligned with your specific workflows and operational needs.",
+    img: ENG,
+  },
+  {
+    title: "Around-the-Clock Remote Support",
+    description:
+      "Receive continuous remote assistance for both minor issues and urgent troubleshooting, ensuring smooth and uninterrupted system performance.",
+    img: time,
+  },
+  {
+    title: "Comprehensive Training Programs",
+    description:
+      "Customized onsite and virtual training designed to upskill your operators, enhance efficiency, and build confidence in handling analytical systems.",
+    img: Traning,
+  },
+  {
+    title: "Service & Maintenance Plans",
+    description:
+      "Flexible plans covering preventive care, repairs, and performance optimization—helping you maximize reliability and instrument lifespan.",
+    img: aggrement,
+  },
+  {
+    title: "Regular System Validation & Calibration",
+    description:
+      "Scheduled calibration and validation to ensure every measurement remains accurate, compliant, and consistent with operational standards.",
+    img: validation,
+  },
+  {
+    title: "Reliable Spare Component Supply",
+    description:
+      "Genuine and compatible spare parts supplied to minimize downtime and maintain seamless lab operations focused on quality and productivity.",
+    img: Radioactive,
+  },
+];
+
+export const servicesList4 = [
+  {
+    title: "Trusted Source Supply",
+    description:
+      "From Cf-252 to Co-60 and As-137, we ensure secure, reliable, and timely delivery of radioactive sources—backed by strong partnerships with certified manufacturers.",
+    img: ENG,
+  },
+  {
+    title: "Comprehensive Surveys & Leak Tests",
+    description:
+      "We conduct precise radiation surveys and leak tests to monitor your environment, ensuring safety, compliance, and peace of mind at every stage.",
+    img: time,
+  },
+  {
+    title: "Certified Training & Knowledge Transfer",
+    description:
+      "Empower your team with certified hands-on and remote training programs, promoting safe handling and confident operation of radioactive materials.",
+    img: Traning,
+  },
+  {
+    title: "Regulatory Guidance Made Simple",
+    description:
+      "Navigate local and international radiation regulations effortlessly with our expert guidance, keeping your operations fully compliant and audit-ready.",
+    img: aggrement,
+  },
+  {
+    title: "Safe & Compliant Transportation",
+    description:
+      "From packaging to logistics, we ensure safe, compliant, and traceable transportation of radioactive materials from manufacturer to your facility.",
+    img: validation,
+  },
+  {
+    title: "Proactive Risk Management",
+    description:
+      "Through detailed audits, preventive checks, and risk assessments, we help you identify potential hazards early and maintain uninterrupted, safe operations.",
+    img: Radioactive,
+  },
+];
+
 
 
 export const accordionData = [
@@ -204,6 +329,90 @@ export const accordionData = [
       "We provide radiation safety guidance, source handling protocols, and compliance support, ensuring your operations meet industry standards while maintaining safe working conditions.",
   },
 ];
+
+export const accordionData2 = [
+  {
+    title: "What does radiation safety entail?",
+    content:
+      "Radiation safety is a practice to protect your plant, personnel, and environment. It involves proper handling, monitoring, and management of radioactive materials to ensure operations remain safe and compliant.",
+  },
+  {
+    title: "Which radioactive sources do you supply?",
+    content:
+      "We provide Cf-252, Co-60, and As-137 sources, ensuring safe, reliable, and timely delivery through strong partnerships with leading manufacturers.",
+  },
+  {
+    title: "Do you conduct radiation surveys and leak tests?",
+    content:
+      "Yes. Our team performs comprehensive surveys and leak testing to monitor radiation levels, maintain safety standards, and prevent any operational risks.",
+  },
+  {
+    title: "Can you provide training for our staff?",
+    content:
+      "Absolutely. We offer onsite and remote training programs to equip operators and technical personnel with the knowledge and skills to safely handle radioactive materials and follow best practices.",
+  },
+  {
+    title: "How do you ensure regulatory compliance?",
+    content:
+      "We provide guidance on local and international regulations, helping you meet all safety and legal standards while keeping your operations efficient and compliant.",
+  },
+  {
+    title: "Do you assist with transportation of radioactive materials?",
+    content:
+      "Yes. Our certified team, trained in IATA Dangerous Goods Handling, ensures the safe and compliant transport of radioactive sources to your site.",
+  },
+  {
+    title: "Are preventive checks and risk assessments part of your services?",
+    content:
+      "Yes. We conduct system audits, preventive inspections, and risk assessments, helping you anticipate challenges and maintain uninterrupted, safe operations.",
+  },
+];
+
+
+
+export const accordionData3 = [
+  {
+    title: "Which types of analyzers do you support?",
+    content:
+      "We provide expert support for XRF, OES, and various other laboratory analyzers, ensuring precise measurements, reliable performance, and long-term stability across multiple industries.",
+  },
+  {
+    title: "Which industries do you serve?",
+    content:
+      "Our services cater to a wide range of industries, including cement, minerals, steel, and pharmaceuticals—helping laboratories maintain consistent quality, regulatory compliance, and operational efficiency.",
+  },
+  {
+    title: "What service plans are available for lab analyzers?",
+    content:
+      "We offer flexible service plans, including full-service agreements, Time & Material services, and spare parts supply, all tailored to your specific operational and budget requirements.",
+  },
+  {
+    title: "How quickly can your team respond to service requests?",
+    content:
+      "Our support team provides 24/7 premium assistance for mission-critical systems and an 8x5 standard plan for business-hour coverage—ensuring rapid response and minimal downtime.",
+  },
+  {
+    title: "Do you provide training for lab staff and operators?",
+    content:
+      "Yes. We conduct comprehensive onsite and remote training programs to enhance operator skills, strengthen system knowledge, and improve overall laboratory efficiency.",
+  },
+  {
+    title: "How do you ensure analyzers maintain accuracy and reliability?",
+    content:
+      "We ensure accuracy and reliability through scheduled calibration, validation, preventive maintenance, and expert technical support—guaranteeing precise, compliant, and consistent performance.",
+  },
+  {
+    title: "Do you support integration with LIMS?",
+    content:
+      "Yes. Our specialists assist with LIMS integration and data management, ensuring smooth transfer of analytical results for better traceability, automated reporting, and enhanced process control.",
+  },
+  {
+    title: "How do you ensure minimal downtime for lab operations?",
+    content:
+      "By combining proactive maintenance, genuine spare parts supply, and fast remote or onsite assistance, we minimize downtime and maintain uninterrupted laboratory performance.",
+  },
+];
+
 
 
 export const globeData = {
@@ -394,22 +603,123 @@ export const globeData = {
   ]
 }
 
-
 export const expertiesCards = [
-
   {
     title: "Our purpose",
-    description: "ABB’s purpose is to enable a more sustainable and resource-efficient future with our technology leadership in electrification and automation. Our purpose is why we are in business. It expresses both what we stand for as a company and what we aspire to be in the future. Make our purpose part of your story.",
+    description:
+      "ABB’s purpose is to enable a more sustainable and resource-efficient future with our technology leadership in electrification and automation. Our purpose is why we are in business. It expresses both what we stand for as a company and what we aspire to be in the future. Make our purpose part of your story.",
     gridClass: "md:col-span-1 row-span-1",
-    // icon: < className="w-8 h-8" />,
     bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
   },
-  // {
-  //   title: "PGNAA Analyzer",
-  //   description: "A Team with over 100 man-years of experience in PGNAA, who have in the past, have worked with various original equipment manufacturers at senior positions. Our team brings over 100 man-years of experience in PGNAA, having worked in senior positions with various original equipment manufacturers. As Sales & Service Managers at Thermo Fisher Scientific PGNAA systems, we have sold and supported over 150 systems across the Middle East, Africa, and worldwide. As Senior Service Engineers at Thermo Fisher Scientific, we have provided expert support for more than 150 systems, including BMA, CBA, CBGN, CBX, OMNI, FSA, and EBA. Our experience extends further as Senior Field Engineers specializing in PGNAA, having worked with Thermo Fisher, Scantech, and other leading manufacturers. In addition, as Field Service Engineers, the seamless operation of PGNAA solutions.",
-  //   // icon: <Eye className="w-8 h-8" />,
-  //   gridClass: "md:col-span-1 row-span-1",
-  //   bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
-  // },
-
+  {
+    title: "Understanding Customer Challenges",
+    description:
+      "We start by listening to operational gaps, from analyzer performance issues to radiation safety concerns, and create solutions that truly address real-world needs.",
+    gridClass: "md:col-span-1 row-span-1",
+    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+  },
+  {
+    title: "Rapid Regional Support",
+    description:
+      "By stationing engineers in key geographies, we provide fast onsite assistance, minimizing downtime and ensuring mission-critical systems remain operational.",
+    gridClass: "md:col-span-1 row-span-1",
+    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+  },
+  {
+    title: "Cross-Industry Expertise",
+    description:
+      "Serving cement, minerals, steel, oil & gas, and pharmaceuticals, we leverage hands-on experience with XRF, OES, PGNAA, and lab analyzers to optimize operations and improve efficiency.",
+    gridClass: "md:col-span-1 row-span-1",
+    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+  },
+  {
+    title: "Continuous Learning & Service Evolution",
+    description:
+      "Every customer interaction informs our growth. We continuously refine training programs, preventive maintenance, and support services to enhance reliability and operational performance.",
+    gridClass: "md:col-span-1 row-span-1",
+    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+  },
+  {
+    title: "Safety and Compliance as a Core",
+    description:
+      "Our approach prioritizes radiation safety, secure source handling, and regulatory compliance, empowering clients to operate with confidence, accuracy, and peace of mind.",
+    gridClass: "md:col-span-1 row-span-1",
+    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+  },
 ]
+
+
+export const portfolioItems = [
+  {
+    title: "Mission-Critical PGNAA Solutions",
+    description:
+      "We provide expert support for process analyzers, enabling real-time monitoring, precise measurements, and high uptime. Our team has extensive experience in optimizing systems for maximum performance, tailored to your operational needs.",
+  },
+  {
+    title: "Lab Analyzer Support",
+    description:
+      "From XRF and OES to lab analyzers, we ensure accuracy, reliability, and consistent results. Our services include preventive maintenance, troubleshooting, spare parts supply, and system optimization, helping laboratories achieve peak performance every day.",
+  },
+  {
+    title: "Radiation Safety & Services",
+    description:
+      "Safety is at the core of everything we do. Our solutions cover source supply, radiation surveys, leak tests, compliance guidance, and secure transport, allowing you to operate with confidence, regulatory compliance, and peace of mind.",
+  },
+  {
+    title: "Training & Knowledge Transfer",
+    description:
+      "We empower your teams through hands-on and virtual training, covering system operation, maintenance, calibration, and radiation safety. By bridging knowledge gaps, we boost operational efficiency and reduce downtime.",
+  },
+  {
+    title: "Regional Rapid Support",
+    description:
+      "With outstationed engineers across key geographies in the Middle East, Africa, and Turkey, we provide fast onsite response, minimizing downtime and keeping mission-critical systems running smoothly.",
+  },
+  {
+    title: "Compliance & Advisory Services",
+    description:
+      "We guide our customers through regulatory standards, preventive maintenance schedules, and best practices, ensuring that operations remain safe, efficient, and fully compliant.",
+  },
+]
+
+
+
+
+export const CardsList = [
+  {
+    title: "Speak to Our Experts",
+    description:
+      "Direct access to our specialists for technical guidance, troubleshooting, or operational advice.",
+    icon: <ChatBubbleLeftRightIcon className="h-10 w-10 text-blue-600" />,
+    action: () => {
+      // trigger contact form or chat link
+    },
+  },
+  {
+    title: "Request an Onsite Visit",
+    description:
+      "Schedule an engineer for hands-on support, preventive maintenance, or system optimization.",
+    icon: <MapPinIcon className="h-10 w-10 text-green-600" />,
+    action: () => {
+      // trigger booking form
+    },
+  },
+  {
+    title: "Drop Us a Message",
+    description:
+      "Send inquiries via online form or email for prompt, personalized responses.",
+    icon: <EnvelopeIcon className="h-10 w-10 text-yellow-600" />,
+    action: () => {
+      // trigger contact form
+    },
+  },
+  {
+    title: "Explore Our Global Presence",
+    description:
+      "See where our engineers and support teams are stationed worldwide for rapid, local support.",
+    icon: <GlobeAltIcon className="h-10 w-10 text-purple-600" />,
+    action: () => {
+      // open interactive map
+    },
+  },
+];

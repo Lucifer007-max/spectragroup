@@ -19,6 +19,7 @@ import AcquisitionsSection from './card/OurClients';
 import MultiProductSlider from './card/CardGrid';
 // import Globe from './Globe/Globe';
 // import GlowingGlobe from './Globe/Globe';
+import banner from '../assets/images/banner.jpg';
 import GlobeComponent from './Globe/Globe';
 const Hero = () => {
   const sectionRef = useRef(null)
@@ -65,7 +66,7 @@ const Hero = () => {
               style={{ objectFit: 'cover', background: "rgb(15 17 19)" }}
             /> */}
             <motion.img
-              src="https://www.tunnelindia.com/TunnelIndiaImages/KnowledgeImages/batching-plant-banner-2.jpg"
+              src={banner}
               className="w-full h-full object-cover  "
               alt="Logo"
               initial={{ scale: 1, x: 0 }} // Start at normal scale and position

@@ -5,7 +5,7 @@ import { useRef, useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import Accordion from '../Service/Accordion'
 import Breadcrumb from '../Breadcrumb/Breadcrumb'
-export default function Product({ title, content, pageTitle, TagLine, produtParagraph, img }) {
+export default function Product({ title, content, pageTitle, TagLine, produtParagraph, img, accordion }) {
     const containerRef = useRef(null)
     const sectionRef = useRef(null)
     const isInView = useInView(sectionRef, { once: false, amount: 0.1 })
@@ -100,7 +100,7 @@ export default function Product({ title, content, pageTitle, TagLine, produtPara
                                 </motion.div>
                             </div>
 
-                            <Accordion />
+                            <Accordion accordion={accordion} />
                         </section>
                     </div>
                 </div>

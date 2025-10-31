@@ -50,7 +50,7 @@ export default function Accordion({accordion}) {
                         {/* Accordion Header */}
                         <motion.div
                             onClick={() => toggleAccordion(index)}
-                            className="flex justify-between items-center bg-customOrange/90 px-5 py-3 cursor-pointer hover:shadow-md transition duration-300"
+                            className="flex justify-between items-center bg-footer2 px-5 py-3 cursor-pointer hover:shadow-md transition duration-300"
                         >
                             <h2 className="text-lg text-light font-semibold">{item.title}</h2>
                             <motion.div

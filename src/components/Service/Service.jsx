@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer'
 import { servicesList } from '../../utils/data'
 import Breadcrumb from '../Breadcrumb/Breadcrumb'
 import { useMediaQuery } from 'react-responsive'
-import support from '../../assets/images/service/supportService.jpg'
+import support from '../../assets/images/PGNAA.jpg'
 import Accordion from './Accordion'
 export default function Service({ title, content, pageTitle, TagLine, accordion , service}) {
   const containerRef = useRef(null)

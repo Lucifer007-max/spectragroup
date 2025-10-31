@@ -1,6 +1,6 @@
 import React from 'react'
 import Service from './Service/Service';
-import { accordionData2, servicesList2 } from '../utils/data';
+import { accordionData2, servicesList4 } from '../utils/data';
 
 export default function XRayservice() {
     const data = `Radiation Services – Safety, Expertise, and Reliability You Can Trust
@@ -32,7 +32,7 @@ export default function XRayservice() {
     const pageTitle = `Radiation Services`;
     const TagLine = `Comprehensive Solutions for Precision Analysis`;
     return (
-        <Service title={'Radiation Services'} content={data} pageTitle={pageTitle} TagLine={TagLine} accordion={accordionData2}  service={servicesList2}/>
+        <Service title={'Radiation Services'} content={data} pageTitle={pageTitle} TagLine={TagLine} accordion={accordionData2}  service={servicesList4}/>
     )
 }
 

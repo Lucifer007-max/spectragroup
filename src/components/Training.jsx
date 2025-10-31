@@ -11,7 +11,7 @@ import Calibration from "../assets/images/traning/calibration.jpg";
 import Trobule from "../assets/images/traning/troubleshoot.jpg";
 import saftey from "../assets/images/traning/saftey.jpg";
 import Software from "../assets/images/traning/software.jpg";
-
+import training from "../assets/images/Training.jpg";
 const Training = () => {
     const containerRef = useRef(null);
 
@@ -198,7 +198,7 @@ const Training = () => {
                                         transition={{ duration: 0.3 }}
                                     >
                                         <img
-                                            src={rays}
+                                            src={training}
                                             alt="Artistic visual"
                                             className="w-full h-full object-cover"
                                         />

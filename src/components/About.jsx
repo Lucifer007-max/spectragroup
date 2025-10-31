@@ -9,7 +9,7 @@ import Map from '../assets/images/about/map.png'
 import Cement from "../assets/images/service/cement.jpg";
 import Power from "../assets/images/service/power.jpg";
 import Mineral from "../assets/images/service/Mineral.jpg";
-import Oil from "../assets/images/service/Oil&gas.jpg";
+import Oil from "../assets/images/oil_gas.jpg";
 import Iron from "../assets/images/service/Iron.jpg";
 import Legal from '../assets/images/about/glass.jpg'
 import royal from '../assets/images/about/petrochemical.jpg'

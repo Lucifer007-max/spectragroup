@@ -173,7 +173,8 @@ canvas{
 }
 
 .nav_custom {
-  color: #dc5050;
+  /* color: #dc5050; */
+  color: #ff0000;
   font-weight: 600;
   font-family: 'Montserrat';
 }

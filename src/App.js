@@ -21,6 +21,7 @@ import Service from './components/PGNAAservice';
 import PGNAAService from './components/PGNAAservice';
 import XRayservice from './components/XRayservice';
 import RadiationProducts from './components/RadiationProducts';
+import Lab_Analyzers from './components/Lab_Analyzers';
 // import
 function App() {
   const [loading, setLoading] = useState(true);
@@ -82,6 +83,7 @@ function App() {
               <Route path="/training" key="expertise" element={<Training />} />
               <Route path="/service/pgnaa-service" key="service" element={<PGNAAService />} />
               <Route path="/service/xray-service" key="service" element={<XRayservice />} />
+              <Route path="/service/lab-analyzer-service" key="service" element={<Lab_Analyzers />} />
               <Route path="/product/radiation-product" key="service" element={<RadiationProducts />} />
               {/* <Route path="/about" key="about" element={<AboutUs />} />
               <Route path="/service/pgnaa-analyzer" key="pgnaa-analyzer" element={<AboutUs />} />

@@ -12,7 +12,7 @@ const navLinks = [
     path: "service",
     children: [
       { title: "Process Analyzers", path: "/service/pgnaa-service" },
-      { title: "Lab Analyzers", path: "/service/xray-service" },
+      { title: "Lab Analyzers", path: "/service/lab-analyzer-service" },
       { title: "Radtion Service", path: "/service/xray-service" },
     ],
   },

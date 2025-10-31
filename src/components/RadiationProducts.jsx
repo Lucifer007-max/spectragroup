@@ -1,7 +1,7 @@
 import React from 'react';
 import Product from './Product/Product';
 import { motion } from 'framer-motion';
-
+import { servicesList2 } from '../utils/data';
 export default function RadiationProducts() {
     const para = <motion.p initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} className='text-gray-700 space-y-6'>
         We provide comprehensive solutions to end-users for industrial source supply, offering turn-key services. Our product range includes radioactive sources used in radiometric process control systems for level, density, thickness, and weight measurement. Additionally, we supply sealed neutron sources for applications such as cement analysis, oil and gas well logging, explosive detection, nuclear reactor start-ups, and industrial research.
@@ -125,6 +125,6 @@ export default function RadiationProducts() {
     const TagLine = `Comprehensive solutions for industrial radioactive sources, including supply, measurement, and neutron applications with turn-key services.`;
 
     return (
-        <Product title={'Radioactive Nuclide'} content={data} pageTitle={pageTitle} TagLine={TagLine} produtParagraph={para} img={'https://614now.com/wp-content/uploads/2019/07/shutterstock_729061273.jpg'} />
+        <Product title={'Radioactive Nuclide'} content={data} pageTitle={pageTitle} TagLine={TagLine} produtParagraph={para} img={'https://614now.com/wp-content/uploads/2019/07/shutterstock_729061273.jpg'} accordion={servicesList2} />
     )
 }
