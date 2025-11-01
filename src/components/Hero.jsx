@@ -86,7 +86,7 @@ const Hero = () => {
           {/* Image for Mobile */}
           <div className="block md:hidden absolute w-full h-full overflow-hidden">
             <motion.img
-              src="https://www.in-housecnc.com/wp-content/uploads/2023/07/inhouse-cnc-blog-cnc-safety-e1689984072943.jpg"
+              src={banner}
               className="w-full h-full object-cover"
               alt="Logo"
               initial={{ scale: 1, x: 0 }} // Start at normal scale and position
