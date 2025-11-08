@@ -47,7 +47,7 @@ export default function Service({ title, content, pageTitle, TagLine, accordion 
             backgroundImage: "url(" + support + ")"
           }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-70" />
+          <div className="absolute inset-0 bg-black bg-opacity-65           " />
           {/* <img
             src={support}
             alt="Gamma-ray On-line Analyzers"
@@ -59,8 +59,8 @@ export default function Service({ title, content, pageTitle, TagLine, accordion 
             transition={{ duration: 1 }}
             className="relative z-10 px-3"
           >
-            <h1 className="text-4xl text-light font-bold">{pageTitle}</h1>
-            <p className="mt-4 text-light text-lg">{TagLine}</p>
+            <h1 className="text-6xl text-light font-bold">{pageTitle}</h1>
+            <p className="mt-4 text-light text-3xl">{TagLine}</p>
           </motion.div>
         </section>
 
@@ -135,10 +135,10 @@ export default function Service({ title, content, pageTitle, TagLine, accordion 
           </motion.div>
 
         </div>
-        <div className='py-10'>
+`        <div className='py-10'>
           <Accordion accordion={accordion}/>
 
-        </div>
+        </div>`
       </div>
     </section>
   )

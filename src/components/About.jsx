@@ -2,13 +2,13 @@ import React, { useRef, useEffect, useState, useMemo } from 'react'
 import { motion, useScroll, useTransform, useSpring, useInView, useAnimation } from 'framer-motion'
 import { Rocket, Users, Zap, CircleDot, CheckCircle, MoveRight, Clock } from 'lucide-react'
 import { GlowingCard } from './card/GlowingCard';
-import mission from '../assets/images/backgrounds/experties.jpg';
+import mission from '../assets/bg_img.jpg';
 import Breadcrumb from './Breadcrumb/Breadcrumb';
 import CountUp from "react-countup";
 import Map from '../assets/images/about/map.png'
-import Cement from "../assets/images/service/cement.jpg";
-import Power from "../assets/images/service/power.jpg";
-import Mineral from "../assets/images/service/Mineral.jpg";
+import Cement from "../assets/crushing.webp";
+import Power from "../assets/coal.jpg";
+import Mineral from "../assets/minig.jpg";
 import Oil from "../assets/images/oil_gas.jpg";
 import Iron from "../assets/images/service/Iron.jpg";
 import Legal from '../assets/images/about/glass.jpg'
@@ -49,7 +49,7 @@ const About = () => {
   const services = [
 
     {
-      title: " Mission-Critical XRF &amp; OES Solutions",
+      title: " Mission-Critical XRF & OES Solutions",
       description: "Spectra Group delivers expert support for XRF, XRD, and OES analyzers across the Middle East, Africa, and Turkey. Our team combines decades of global experience and deep industry expertise, providing advanced diagnostics, maintenance, and application support to ensure precision, reliability, and maximum uptime in mission-critical industrial operations. Aligned with leading global instrument manufacturers, we bring trusted solutions and technical excellence to industries relying on high-performance analytical systems, helping clients achieve accuracy, compliance, and operational efficiency.",
       // icon: <FlagTriangleLeft className="w-8 h-8" />,
       gridClass: "md:col-span-1 row-span-1",
@@ -104,10 +104,10 @@ const About = () => {
     <section ref={sectionRef}>
       <motion.div className="relative container mx-auto px-4 " ref={aboutUsRef}>
         {/* BREADCRUM */}
-        <Breadcrumb title="About SPECTAR" />
+        <Breadcrumb title="About SPECTRA" />
         {/* ABOUT , SERVICE & CEO SECTION */}
         <section className="max-w-5xl mx-auto px-6 lg:px-12 py-12 space-y-16" >
-          {/* About SPECTAR Section */}
+          {/* About SPECTRA Section */}
 
           <motion.section
             initial={{ opacity: 0, y: 30 }}
@@ -122,7 +122,7 @@ const About = () => {
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8 }}
-                  className="inline-block text-dark"
+                  className="inline-block text-gray-400"
                 >
                   ABOUT
                 </motion.span>
@@ -133,7 +133,7 @@ const About = () => {
                   className="inline-block ml-2 md:ml-4"
                   style={{ WebkitTextStroke: '1px black', color: 'transparent' }}
                 >
-                  SPECTAR
+                  SPECTRA
                 </motion.span>
               </motion.h2>
             </div>
@@ -141,14 +141,16 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }} className="text-gray-600 leading-relaxed">
-              
-              Empowering Industries, Shaping a Sustainable Future
-Headquartered in Dubai, UAE, Spectra Group is a globally recognized leader in providing
-innovative, reliable, and high-performance technical solutions across the Middle East, Africa,
-and Turkey. Through our flagship companies, Spectra Line Industrial LLC and
-GeoSpectra Technical Services LLC, we serve mission-critical industries including
-Cement, Coal, Iron &amp; Steel, Oil &amp; Gas, and Minerals, delivering solutions that drive
-operational excellence, efficiency, and sustainability. </motion.p>
+                            
+                            <span className="text-customOrange font-bold">Empowering Industries, Shaping a Sustainable Future </span>
+              Headquartered in Dubai, UAE, Spectra Group is a globally recognized leader in providing
+              innovative, reliable, and high-performance technical solutions across the Middle East, Africa,
+              and Turkey. Through our flagship companies,  <a href="https://www.spectraline.ae/" className="text-customOrange font-bold italic">Spectra Line Industrial LLC </a> and
+               <a href="https://www.geospectratech.com/" className="text-customOrange font-bold italic"> GeoSpectra Technical Services LLC</a>, we serve mission-critical industries including
+              Cement, Coal, Iron & Steel, Oil & Gas, and Minerals, delivering solutions that drive
+              operational excellence, efficiency, and sustainability. 
+            </motion.p>
+
           </motion.section>
 
           {/* CEO Quote Section */}
@@ -166,7 +168,7 @@ operational excellence, efficiency, and sustainability. </motion.p>
             <div className="space-y-4">
               <p className="text-lg font-semibold text-gray-800">
                   </p>
-              <p className="text-gray-600 font-medium">- Lorem, SPECTAR CEO</p>
+              <p className="text-gray-600 font-medium">- Lorem, SPECTRA CEO</p>
             </div>
           </motion.section> */}
 
@@ -202,11 +204,11 @@ operational excellence, efficiency, and sustainability. </motion.p>
               </motion.h2>
             </div>
             <p className="text-gray-600 leading-relaxed mb-5">
-              With a strong presence in the Middle East and Africa, Spectar delivers mission-critical support for cutting-edge XRF, XRD, OES, and PGNAA analyzers (including brands like Gamma-Metrics, Geoscan, ARL, and PANalytical). Our expertise extends to radioisotope supply, radioactive waste management, and industrial radiation protection services.
+              With a strong presence in the Middle East and Africa, SPECTRA delivers mission-critical support for cutting-edge XRF, XRD, OES, and PGNAA analyzers (including brands like Gamma-Metrics, Geoscan, ARL, and PANalytical). Our expertise extends to radioisotope supply, radioactive waste management, and industrial radiation protection services.
             </p>
             <p className="text-gray-600 leading-relaxed  mb-5">
 
-              Backed by a team of highly skilled professionals with over 150 man-years of experience, Spectar is committed to innovation, sustainability, and delivering world-class technical excellence.
+              Backed by a team of highly skilled professionals with over 150 man-years of experience, SPECTRA is committed to innovation, sustainability, and delivering world-class technical excellence.
             </p>
           </motion.section> */}
         </section>
@@ -222,7 +224,7 @@ operational excellence, efficiency, and sustainability. </motion.p>
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="inline-block text-dark"
+              className="inline-block text-gray-400"
             >
               OUR
             </motion.span>
@@ -261,7 +263,7 @@ operational excellence, efficiency, and sustainability. </motion.p>
                   >
                     <motion.h3
                       whileHover={{ scale: 1.1 }}
-                      className="text-white text-lg sm:text-xl font-bold text-center"
+                      className="text-white text-lg sm:text-xl font-oswald text-center"
                     >
                       {item.title}
                     </motion.h3>
@@ -294,7 +296,7 @@ operational excellence, efficiency, and sustainability. </motion.p>
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="inline-block text-dark"
+              className="inline-block text-gray-400"
             >
               OUR
             </motion.span>
@@ -358,7 +360,7 @@ operational excellence, efficiency, and sustainability. </motion.p>
         style={{
           backgroundImage: "url(" + mission + ")"
         }} >
-        <div className="absolute inset-0 bg-black bg-opacity-70" />
+        <div className="absolute inset-0 bg-black bg-opacity-65" />
 
         {/* Vertical "ABOUT US" Text */}
         <motion.div
@@ -399,21 +401,21 @@ operational excellence, efficiency, and sustainability. </motion.p>
                   className={`${service.gridClass}`}
                   variants={itemAnimation}
                 >
-                  <GlowingCard
-                    className={`${service.bgClass} h-full rounded-lg backdrop-blur-sm 
+                <GlowingCard
+                    className={`${service.bgClass} h-[400px] rounded-lg backdrop-blur-sm 
                 border border-white/10 hover:border-white/20 transition-all duration-500
                 group cursor-pointer overflow-hidden`}
                   >
                     <div className="relative h-full p-6 flex flex-col">
-                      <motion.div
+                      {/* <motion.div
                         whileHover={{ scale: 1.2, rotate: 360 }}
                         transition={{ type: "spring", stiffness: 260, damping: 20 }}
                         className="text-white relative inline-block mb-4"
                       >
-                        {/* {service.icon} */}
-                      </motion.div>
+                        {service.icon}
+                      </motion.div> */}
                       <motion.h3
-                        className="text-2xl font-bold mb-3"
+                        className="text-3xl font-bold mb-3"
                         initial={{ opacity: 0.8 }}
                         whileHover={{ opacity: 1, x: 5 }}
                         transition={{ duration: 0.2 }}
@@ -421,27 +423,13 @@ operational excellence, efficiency, and sustainability. </motion.p>
                         {service.title}
                       </motion.h3>
                       <motion.p
-                        className="text-gray-400 text-sm group-hover:text-gray-200 transition-colors duration-300 flex-grow"
+                        className="text-light text-lg group-hover:text-gray-200 transition-colors duration-300 flex-grow"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, duration: 0.5 }}
                       >
                         {service.description}
                       </motion.p>
-                      {/* <motion.button
-                        className="mt-4 text-sm font-semibold flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        whileHover={{ x: 10 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        order
-                        <motion.span
-                          className="ml-2 group-hover:ml-3 transition-all duration-300"
-                          animate={{ x: [0, 5, 0] }}
-                          transition={{ repeat: Infinity, duration: 1.5 }}
-                        >
-                          →
-                        </motion.span>
-                      </motion.button> */}
                     </div>
                   </GlowingCard>
                 </motion.div>

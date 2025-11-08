@@ -9,13 +9,14 @@ module.exports = {
         'orbitron': ['Orbitron', 'sans-serif'],
         'rajdhani': ['Montserrat', 'sans-serif'],
         'syncopate': ['Montserrat', 'sans-serif'],
+        'oswald': ['Oswald', 'sans-serif'],
       },
       colors: {
         primary: '#066aab',
         dark: '#121212',
         light: '#ffffff',
-        customOrange: "#b84e4a",
-        customOrangeDark: "#ff0000"
+        customOrange: "#DB4D4D",
+        customOrangeDark: "#DB4D4D"
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

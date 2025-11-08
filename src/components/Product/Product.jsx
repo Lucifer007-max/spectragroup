@@ -40,7 +40,7 @@ export default function Product({ title, content, pageTitle, TagLine, produtPara
                         backgroundImage: "url(" + img + ")"
                     }}
                 >
-                    <div className="absolute inset-0 bg-black bg-opacity-70" />
+                    <div className="absolute inset-0 bg-black bg-opacity-65" />
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}

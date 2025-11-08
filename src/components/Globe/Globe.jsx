@@ -44,6 +44,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Globe from "react-globe.gl";
 import { globeData } from "../../utils/data";
+import pinImage from "../../assets/images/pin.png";
 
 const GlobeComponent = () => {
   const [places, setPlaces] = useState(globeData?.features);
@@ -69,16 +70,41 @@ const GlobeComponent = () => {
         ref={globeRef}
         width={600} // Adjust width
         height={500} // Adjust height
-        globeImageUrl="https://unpkg.com/three-globe@2.41.12/example/img/earth-water.png"
+        globeImageUrl="https://media.istockphoto.com/id/1156822258/vector/map-of-world-pink-silhouette-vector-illustration-with-gradient-on-white-background.jpg?s=612x612&w=0&k=20&c=YOZdht4PM9xOrBc5Nb9vV-1sBBcvfQzvCGjJUCnEtww="
         backgroundColor="#fff"
-        labelsData={places}
-        labelLat={(d) => d.properties.latitude}
-        labelLng={(d) => d.properties.longitude}
-        labelText={(d) => d.properties.name}
-        labelSize={() => 2} // Fixed size for uniform dots
-        labelDotRadius={() => 2} // Fixed dot radius
-        labelColor={() => "#d52c2c"}
-        labelResolution={2}
+        pointsData={places}
+        pointLat={(d) => d.properties.latitude}
+        pointLng={(d) => d.properties.longitude}
+        pointLabel={(d) => `
+          <div style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          ">
+            <img 
+              src="${pinImage}" 
+              alt="pin" 
+              style="
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+              "
+            />
+            <span style="
+              color: #333;
+              font-size: 12px;
+              margin-top: 4px;
+              background: rgba(255, 255, 255, 0.9);
+              padding: 2px 6px;
+              border-radius: 4px;
+              white-space: nowrap;
+            ">${d.properties.name}</span>
+          </div>
+        `}
+        pointRadius={0.5}
+        pointColor={() => "transparent"}
+        pointResolution={2}
         animateIn={true} // Smooth loading animation
         rotationSpeed={0.9} // Auto-rotate speed
       />

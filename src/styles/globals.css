@@ -9,13 +9,13 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 :root {
   --wpforms-field-border-radius: 3px;
   --wpforms-field-background-color: #ffffff;
-  font-family: "Montserrat", serif;
+  font-family: "Oswald", serif;
 }
 
 body {
@@ -108,7 +108,7 @@ body {
 }
 
 .bg-footer2 {
-  background-color: #ff0000;
+  background-color: #DB4D4D;
 }
 
 .counter-number {
@@ -174,7 +174,42 @@ canvas{
 
 .nav_custom {
   /* color: #dc5050; */
-  color: #ff0000;
+  color: #DB4D4D;
   font-weight: 600;
-  font-family: 'Montserrat';
+  font-family: 'Oswald';
+}
+
+/* Auto-scrolling logo carousel */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+.animate-scroll-reverse {
+  animation: scroll-reverse 10s linear infinite;
+}
+
+.animate-scroll-reverse:hover {
+  animation-play-state: paused;
 }

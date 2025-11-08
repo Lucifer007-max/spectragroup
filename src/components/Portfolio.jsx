@@ -35,15 +35,15 @@ export default function ServicePortfolio() {
         {portfolioItems.map((service, idx) => (
           <motion.div
             key={idx}
-            className="p-6 rounded-2xl bg-gradient-to-br from-red-600 to-red-900/90 shadow-lg border border-red-700/20 h-full flex flex-col"
+            className="p-6 rounded-2xl bg-[#DB4D4D] shadow-lg border border-red-700/20 h-full flex flex-col"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: idx * 0.15 }}
             whileHover={{ scale: 1.05, rotate: 1 }}
           >
-            <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-            <p className="text-sm text-gray-200 flex-grow leading-relaxed">
+            <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
+            <p className="text-md text-light flex-grow leading-relaxed">
               {service.description}
             </p>
           </motion.div>

@@ -5,9 +5,9 @@ import { expertiesCards, Gammaexperties, Xraysexperties } from '../utils/data'
 import rays from '../assets/images/product/rays.webp'
 import { GlowingCard } from './card/GlowingCard'
 import { itemAnimation } from '../utils/animation'
-import mission from '../assets/images/backgrounds/experties.jpg';
+import mission from '../assets/bg_img.jpg';
 import ServicePortfolio from './Portfolio'
-
+import xray from '../assets/images/xray.png'
 const Expertise = () => {
     const sectionRef = useRef(null)
 
@@ -43,7 +43,7 @@ const Expertise = () => {
                                 initial={{ x: -100, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 0.8 }}
-                                className="inline-block text-dark"
+                                className="inline-block text-gray-400"
                             >
                                 Legacy of Expertise
                             </motion.span>
@@ -61,12 +61,12 @@ const Expertise = () => {
                     <motion.p
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.1 }} className="text-gray-600 leading-relaxed">
-                        Since our founding in 2014, Spectra Group has believed that true expertise comes from
+                        transition={{ duration: 0.5, delay: 0.1 }} className="text-dark  font-lg leading-relaxed">
+                        Since our founding in   <span className="text-customOrange font-bold">2014</span>, Spectra Group has believed that true expertise comes from
                         understanding real-world challenges. We began with a vision to provide high-quality
                         technical solutions and services for analytical instruments, process analyzers, and radiation
                         systems. But very quickly, we realized that technology alone is not enough.
-                        Across industries like cement, minerals, steel, oil &amp; gas, and pharmaceuticals, we observed
+                        Across industries like <span className="text-customOrange font-bold">cement, minerals, steel, oil & gas, and pharmaceuticals</span> , we observed
                         recurring challenges: downtime caused by operational gaps, inconsistent analyzer results,
                         and uncertainty in radiation safety practices. These experiences shaped our philosophy—our
                         mission became not just to deliver instruments or services, but to partner with our
@@ -86,7 +86,7 @@ const Expertise = () => {
                 style={{
                     backgroundImage: "url(" + mission + ")"
                 }} >
-                <div className="absolute inset-0 bg-black bg-opacity-70" />
+                <div className="absolute inset-0 bg-black bg-opacity-65" />
 
                 <motion.div
                     initial="hidden"
@@ -114,7 +114,7 @@ const Expertise = () => {
                                                 {/* {service.icon} */}
                                             </motion.div>
                                             <motion.h3
-                                                className="text-2xl font-bold mb-3"
+                                                className="text-3xl font-bold mb-3"
                                                 initial={{ opacity: 0.8 }}
                                                 whileHover={{ opacity: 1, x: 5 }}
                                                 transition={{ duration: 0.2 }}
@@ -122,7 +122,7 @@ const Expertise = () => {
                                                 {service.title}
                                             </motion.h3>
                                             <motion.p
-                                                className="text-gray-400 text-sm group-hover:text-gray-200 transition-colors duration-300 flex-grow"
+                                                className="text-light text-lg group-hover:text-gray-200 transition-colors duration-300 flex-grow"
                                                 initial={{ opacity: 0, y: 20 }}
                                                 whileInView={{ opacity: 1, y: 0 }}
                                                 transition={{ delay: 0.2, duration: 0.5 }}
@@ -237,7 +237,7 @@ const Expertise = () => {
                                         whileHover={{ scale: 1.05 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <img src={'https://th.bing.com/th/id/R.83c80af28f9375a651cfda98c98ecf95?rik=InNCUhpwC%2fOwUg&riu=http%3a%2f%2fwww.vikasdiagnostics.com%2fwp-content%2fuploads%2f2017%2f06%2fdigital-xray.png&ehk=DP8IlRBh7kJSGikLTx4niLlxyqHaQAYeLNHo%2fEEU%2bPk%3d&risl=&pid=ImgRaw&r=0'} alt="X ray" className="w-full h-full object-cover" />
+                                        <img src={xray} alt="X ray" className="w-full h-full object-contain" />
                                         <motion.div
                                             className="absolute inset-0 bg-gradient-to-t from-customOrange to-transparent opacity-1"
                                             whileHover={{ opacity: 0.6 }}

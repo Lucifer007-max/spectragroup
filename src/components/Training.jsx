@@ -1,12 +1,8 @@
 import React, { useRef } from 'react'
 import Breadcrumb from './Breadcrumb/Breadcrumb'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { Experties, Gammaexperties, Xraysexperties } from '../utils/data'
-import rays from '../assets/images/traning/train.jpg'
-
-
-import Map from '../assets/images/about/map.png'
-import Systemm from "../assets/images/traning/system.jpg";
+import { Experties } from '../utils/data'
+import Systemm from "../assets/images/traning/system.png";
 import Calibration from "../assets/images/traning/calibration.jpg";
 import Trobule from "../assets/images/traning/troubleshoot.jpg";
 import saftey from "../assets/images/traning/saftey.jpg";

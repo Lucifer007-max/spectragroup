@@ -8,7 +8,7 @@ export default function PGNAAService() {
 Our PGNAA service team has supported industries across the Middle East, Africa,
 and Turkey, ensuring that their analyzers deliver reliable, continuous, and accurate
 performance.
-Through tailored Product Support Agreements, Time &amp; Material services, and Spare
+Through tailored Product Support Agreements, Time& Material services, and Spare
 Parts Supply, we help customers keep their systems running smoothly. Our hands-on
 support, preventive maintenance, and rapid troubleshooting have enabled clients to
 achieve more than 99% uptime, ensuring uninterrupted operations and consistent

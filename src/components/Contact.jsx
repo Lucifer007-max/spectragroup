@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import Breadcrumb from './Breadcrumb/Breadcrumb';
 import contactBG from '../assets/images/backgrounds/contactBG.png';
 import InteractiveTiles from './InteractiveTiles';
@@ -13,11 +13,33 @@ const Contact = () => {
   ];
 
   const contactInfo = [
-    { icon: <FaMapMarkerAlt />, text: "Office - 211 KML Business Center, Al meydan Street Dubai, United Arab Emirates" },
-    { icon: <FaPhone />, text: "+971-4-3382153" },
-    { icon: <FaPhone />, text: "+971-567185064" },
-    { icon: <FaEnvelope />, text: "info@geospectratech.com" },
+    { icon: <FaMapMarkerAlt />, text: "Office - 211 KML Business Center, Al Meydan Street, Al Quoz 1, United Arab Emirates", type: "map" },
+    { icon: <FaPhone />, text: "+971 5491 9809", type: "phone" },
+    { icon: <FaPhone />, text: "+971 567185064", type: "phone" },
+    { icon: <FaWhatsapp />, text: "+971 556599835", type: "whatsapp" },
+    { icon: <FaEnvelope />, text: "info@spectragroup.ae", type: "email" },
   ];
+
+  const getLink = (info) => {
+    switch (info.type) {
+      case "phone":
+        // Remove spaces and special characters for tel: link
+        const phoneNumber = info.text.replace(/\s+/g, "");
+        return `tel:${phoneNumber}`;
+      case "whatsapp":
+        // Remove spaces and special characters for WhatsApp link
+        const whatsappNumber = info.text.replace(/\s+/g, "").replace(/\+/g, "");
+        return `https://wa.me/${whatsappNumber}`;
+      case "email":
+        return `mailto:${info.text}`;
+      case "map":
+        // Encode the address for Google Maps
+        const encodedAddress = encodeURIComponent(info.text.replace("Office - ", ""));
+        return `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+      default:
+        return "#";
+    }
+  };
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -56,12 +78,12 @@ const Contact = () => {
         <Breadcrumb title={'Contact Us'} />
       </div>
       <div class="image-container">
-        <img src={contactBG} alt="Overlay Image" />
+        <img src={'https://t4.ftcdn.net/jpg/03/95/04/15/360_F_395041586_h21AxqD0dNjxUw3lKFiV5t7qMBJs6wfe.jpg'} alt="Overlay Image" />
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="font-syncopate overlay text-4xl md:text-6xl sm:text-4xl lg:text-7xl font-bold mb-20 tracking-wider text-custom"
-          style={{ color: 'black', fontFamily: 'system-ui' }}
+          className="font-syncopate overlay text-4xl md:text-6xl sm:text-4xl lg:text-7xl font-bold mb-20 tracking-wider text-light"
+          style={{ color: 'white', fontFamily: 'system-ui' }}
         >
           Consulting meets<br /> Transformation
         </motion.h2>
@@ -173,7 +195,14 @@ const Contact = () => {
                   className="flex items-center space-x-4 text-light"
                 >
                   <span className="text-custom text-2xl">{info.icon}</span>
-                  <span className="font-outfit text-dark">{info.text}</span>
+                  <a 
+                    href={getLink(info)} 
+                    target={info.type === "whatsapp" || info.type === "map" ? "_blank" : undefined}
+                    rel={info.type === "whatsapp" || info.type === "map" ? "noopener noreferrer" : undefined}
+                    className="font-outfit text-dark hover:text-custom transition-colors"
+                  >
+                    {info.text}
+                  </a>
                 </motion.div>
               ))}
             </div>
@@ -184,8 +213,8 @@ const Contact = () => {
               className="mt-12"
             >
               <h4 className="text-xl font-bold text-dark mb-4">Working Hours</h4>
-              <p className="text-gray-400 font-outfit">
-                Monday - Friday: 9:00 AM - 6:00 PM
+              <p className="text-dark font-outfit">
+                Monday - Friday: 9:00 AM - 5:00 PM
               </p>
             </motion.div>
           </motion.div>

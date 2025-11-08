@@ -1,8 +1,9 @@
 import { Eye, FlagTriangleLeft, Workflow } from "lucide-react";
 import time from '../assets/images/product/247.jpg'
-import ENG from "../assets/images/product/dedicated.jpg"
-import Traning from "../assets/images/product/training.jpg"
-import aggrement from '../assets/images/product/aggrement.jpg'
+// import ENG from "../assets/images/product/dedicated.jpg"
+import ENG from "../assets/support_engg.jpg"
+import Traning from "../assets/images/training.webp"
+import aggrement from '../assets/images/machinery.jpg'
 import validation from '../assets/images/product/Validation.jpg'
 import Radioactive from '../assets/images/radiation-warning.png';
 import {
@@ -87,7 +88,7 @@ export const Gammaexperties = [
 
 export const Experties = [
   "We conduct dedicated ON-SITE user training programs at plant site ON CUSTOMER SYSTEMS and provide advance Operation, maintenance and troubleshooting training specific to your PGNAA and/or X-ray analyzers.",
-  "Periodically, we also conduct OFF-SITE training programs on PGNAA and X-ray analyzer systems maintenance and troubleshooting at various locations. An enquiry can be sent to us directly or thru our website.",
+  "Periodically, we also conduct OFF-SITE training programs on PGNAA and X-ray analyzer systems maintenance and troubleshooting at various locations. An enquiry can be sent to us directly or through our website.",
   "Eventually with our training programs, most customers are able to bypass expensive maintenance agreement of OEMs and can easily operate & troubleshoot the analyzer systems at much less cost and better capabilities."
 
 ]
@@ -143,19 +144,19 @@ export const servicesList = [
     img: time,
   },
   {
-    title: "Onsite &amp; Offsite Training",
+    title: "Onsite & Offsite Training",
     description:
       "Hands-on and remote training programs for operators and technical staff to maximize system efficiency and confidence.",
     img: Traning,
   },
   {
-    title: "Maintenance &amp; Support Agreements",
+    title: "Maintenance & Support Agreements",
     description:
       "Flexible agreements covering preventive maintenance, repairs, and system optimization, ensuring long-term reliability and uptime.",
     img: aggrement,
   },
   {
-    title: "Periodic System Validation &amp; Calibration",
+    title: "Periodic System Validation& Calibration",
     description:
       "Regular calibration and validation to maintain measurement accuracy, compliance, and process integrity for mission-critical operations.",
     img: validation,
@@ -296,7 +297,7 @@ export const accordionData = [
   {
     title: "Can we customize a service plan for our specific needs?",
     content:
-      "Yes. We provide flexible plans, including Product Support Agreements, Time &amp; Material services, and spare parts supply tailored to your operations.",
+      "Yes. We provide flexible plans, including Product Support Agreements, Time& Material services, and spare parts supply tailored to your operations.",
   },
   {
     title: "How quickly can your team respond to service requests?",
@@ -609,42 +610,42 @@ export const expertiesCards = [
     description:
       "ABB’s purpose is to enable a more sustainable and resource-efficient future with our technology leadership in electrification and automation. Our purpose is why we are in business. It expresses both what we stand for as a company and what we aspire to be in the future. Make our purpose part of your story.",
     gridClass: "md:col-span-1 row-span-1",
-    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+    bgClass: "bg-[#DB4D4D]",
   },
   {
     title: "Understanding Customer Challenges",
     description:
       "We start by listening to operational gaps, from analyzer performance issues to radiation safety concerns, and create solutions that truly address real-world needs.",
     gridClass: "md:col-span-1 row-span-1",
-    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+    bgClass: "bg-[#DB4D4D]",
   },
   {
     title: "Rapid Regional Support",
     description:
       "By stationing engineers in key geographies, we provide fast onsite assistance, minimizing downtime and ensuring mission-critical systems remain operational.",
     gridClass: "md:col-span-1 row-span-1",
-    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+    bgClass: "bg-[#DB4D4D]",
   },
   {
     title: "Cross-Industry Expertise",
     description:
       "Serving cement, minerals, steel, oil & gas, and pharmaceuticals, we leverage hands-on experience with XRF, OES, PGNAA, and lab analyzers to optimize operations and improve efficiency.",
     gridClass: "md:col-span-1 row-span-1",
-    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+    bgClass: "bg-[#DB4D4D]",
   },
   {
     title: "Continuous Learning & Service Evolution",
     description:
       "Every customer interaction informs our growth. We continuously refine training programs, preventive maintenance, and support services to enhance reliability and operational performance.",
     gridClass: "md:col-span-1 row-span-1",
-    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+    bgClass: "bg-[#DB4D4D]",
   },
   {
     title: "Safety and Compliance as a Core",
     description:
       "Our approach prioritizes radiation safety, secure source handling, and regulatory compliance, empowering clients to operate with confidence, accuracy, and peace of mind.",
     gridClass: "md:col-span-1 row-span-1",
-    bgClass: "bg-gradient-to-br from-red-600/30 to-red-900/30",
+    bgClass: "bg-[#DB4D4D]",
   },
 ]
 

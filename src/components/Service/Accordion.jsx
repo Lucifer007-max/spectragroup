@@ -19,7 +19,7 @@ export default function Accordion({accordion}) {
                             initial={{ x: -100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.8 }}
-                            className="inline-block text-dark"
+                            className="inline-block text-gray-400"
                         >
                             FREQUENTLY ASK
                         </motion.span>

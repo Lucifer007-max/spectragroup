@@ -1,12 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
-
+import ThermoFisher from '../../assets/thermo-fisher.jpg'
 const cards = [
   {
     title: "Thermo Fisher",
     bg: "bg-blue-500",
-    img: "https://dlg7f0e93aole.cloudfront.net/wp-content/uploads/Nicolet-iS10-FTIR-Spectrometer.jpg",
+    img: ThermoFisher,
   },
   {
     title: "FANR Affiliated",
@@ -30,7 +30,7 @@ export default function MultiProductSlider() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -57,26 +57,26 @@ export default function MultiProductSlider() {
       transition={{ duration: 1 }}
       className="w-full py-10 overflow-hidden"
     >
-      <Slider {...settings}>
+      <Slider {...settings} className="cursor-grab">
         {cards.map((card, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="p-4"
+            className="p-4 cursor-grab"
           >
             <div
-              className={`rounded-lg shadow-lg overflow-hidden ${card.bg} text-white`}
+              className={`rounded-lg shadow-lg overflow-hidden   text-white`}
             >
               <img
                 src={card.img}
                 alt={card.title}
-                className="w-full bg-light h-48 object-cover"
+                className="w-full h-[200px] object-contain p-7 "
               />
-              <div className="p-4">
+              {/* <div className="p-4">
                 <h2 className="text-lg font-bold">{card.title}</h2>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         ))}

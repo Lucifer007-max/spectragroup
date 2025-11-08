@@ -2,22 +2,17 @@ import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
-// import Residents from './components/Residents';
-// import Media from './components/media';
-import Loading from './components/Loading';
-// import SpecialProjects from './components/Product';
-// import Production from './components/Service';
-// import Advertisement from './components/Advertisement';
+import About from './components/About'; 
+import Loading from './components/Loading'; 
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import './styles/globals.css';
 import './assets/fonts/fonts.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NetWork from './components/Network';
 import Expertise from './components/Expertise';
 import Training from './components/Training';
-import Service from './components/PGNAAservice';
 import PGNAAService from './components/PGNAAservice';
 import XRayservice from './components/XRayservice';
 import RadiationProducts from './components/RadiationProducts';
@@ -94,16 +89,9 @@ function App() {
               {/* <Route path="/training" key="training" element={<AboutUs />} />
               <Route path="/network" key="network" element={<AboutUs />} /> */}
             </Routes>
+            <Footer />
+            <ScrollToTop />
           </BrowserRouter>
-
-          {/* <About /> */}
-          {/* <Media /> */}
-          {/* <Residents /> */}
-          {/* <SpecialProjects /> */}
-          {/* <Production />
-          <Advertisement /> */}
-          {/* <Contact /> */}
-          <Footer />
         </div>
       )}
     </AnimatePresence>
