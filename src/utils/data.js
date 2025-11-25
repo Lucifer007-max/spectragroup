@@ -105,28 +105,28 @@ export const Xraysexperties = [
 
 
 export const dataList = [
-  { "countryName": "Algeria", "locationLatitude": 36.7538, "locationLongitude": 3.0588 },
-  { "countryName": "Egypt", "locationLatitude": 30.0444, "locationLongitude": 31.2357 },
-  { "countryName": "Jordan", "locationLatitude": 31.9634, "locationLongitude": 35.9304 },
-  { "countryName": "Nigeria", "locationLatitude": 7.4951, "locationLongitude": 9.0575 },
-  { "countryName": "Lebanon", "locationLatitude": 33.8869, "locationLongitude": 35.8497 },
-  { "countryName": "Ethiopia", "locationLatitude": 9.145, "locationLongitude": 38.7369 },
+  { "countryName": "Algeria", "locationLatitude": 28.0339, "locationLongitude": 1.6596 },
+  { "countryName": "Egypt", "locationLatitude": 26.8206, "locationLongitude": 30.8025 },
+  { "countryName": "Jordan", "locationLatitude": 30.5852, "locationLongitude": 36.2384 },
+  { "countryName": "Nigeria", "locationLatitude": 9.0820, "locationLongitude": 8.6753 },
+  { "countryName": "Lebanon", "locationLatitude": 33.8547, "locationLongitude": 35.8623 },
+  { "countryName": "Ethiopia", "locationLatitude": 9.1450, "locationLongitude": 38.4897 },
   { "countryName": "Morocco", "locationLatitude": 31.7917, "locationLongitude": -7.0926 },
-  { "countryName": "Yemen", "locationLatitude": 15.5521, "locationLongitude": 48.5164 },
-  { "countryName": "Oman", "locationLatitude": 23.5854, "locationLongitude": 55.3137 },
-  { "countryName": "Libya", "locationLatitude": 32.8797, "locationLongitude": 13.1924 },
-  { "countryName": "Pakistan", "locationLatitude": 31.5204, "locationLongitude": 74.3587 },
-  { "countryName": "Saudi Arabia", "locationLatitude": 24.7136, "locationLongitude": 46.6753 },
-  { "countryName": "Senegal", "locationLatitude": 14.6928, "locationLongitude": -14.6928 },
-  { "countryName": "Qatar", "locationLatitude": 25.276987, "locationLongitude": 51.1839 },
-  { "countryName": "Tanzania", "locationLatitude": -6.1659, "locationLongitude": 39.2026 },
+  { "countryName": "Yemen", "locationLatitude": 15.5527, "locationLongitude": 48.5164 },
+  { "countryName": "Oman", "locationLatitude": 21.4735, "locationLongitude": 55.9754 },
+  { "countryName": "Libya", "locationLatitude": 26.3351, "locationLongitude": 17.2283 },
+  { "countryName": "Pakistan", "locationLatitude": 30.3753, "locationLongitude": 69.3451 },
+  { "countryName": "Saudi Arabia", "locationLatitude": 23.8859, "locationLongitude": 45.0792 },
+  { "countryName": "Senegal", "locationLatitude": 14.4974, "locationLongitude": -14.4524 },
+  { "countryName": "Qatar", "locationLatitude": 25.3548, "locationLongitude": 51.1839 },
+  { "countryName": "Tanzania", "locationLatitude": -6.3690, "locationLongitude": 34.8888 },
   { "countryName": "Tunisia", "locationLatitude": 33.8869, "locationLongitude": 9.5375 },
-  { "countryName": "Turkey", "locationLatitude": 39.9334, "locationLongitude": 35.2433 },
-  { "countryName": "South Africa", "locationLatitude": -29.0189, "locationLongitude": 24.7135 },
-  { "countryName": "UAE", "locationLatitude": 23.4241, "locationLongitude": 55.2983 },
+  { "countryName": "Turkey", "locationLatitude": 38.9637, "locationLongitude": 35.2433 },
+  { "countryName": "South Africa", "locationLatitude": -30.5595, "locationLongitude": 22.9375 },
+  { "countryName": "UAE", "locationLatitude": 23.4241, "locationLongitude": 53.8478 },
   { "countryName": "India", "locationLatitude": 20.5937, "locationLongitude": 78.9629 },
   { "countryName": "Zambia", "locationLatitude": -13.1339, "locationLongitude": 27.8493 },
-  { "countryName": "Turkmenistan", "locationLatitude": 38.9697, "locationLongitude": 59.5880 }
+  { "countryName": "Turkmenistan", "locationLatitude": 38.9697, "locationLongitude": 59.5563 }
 ]
 
 

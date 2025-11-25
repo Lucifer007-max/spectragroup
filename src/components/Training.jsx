@@ -40,7 +40,7 @@ const Training = () => {
                     className="space-y-6 py-20">
                     <div className="border-l-4 border-red-500 pl-3">
                         <motion.h2
-                            className="text-4xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
+                            className="text-3xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
                         >
                             <motion.span
                                 initial={{ x: -100, opacity: 0 }}
@@ -120,7 +120,7 @@ const Training = () => {
                                     >
                                         <motion.h3
                                             whileHover={{ scale: 1.1 }}
-                                            className="text-white text-lg sm:text-xl font-bold text-center"
+                                            className="text-white text-lg sm:text-xl font-bold text-center font-oswald"
                                         >
                                             {item.title}
                                         </motion.h3>
@@ -172,7 +172,7 @@ const Training = () => {
                                                     whileInView={{ opacity: 1, x: 0 }}
                                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                                     viewport={{ once: false }}
-                                                    className="text-md text-gray-700 font-medium"
+                                                    className="text-md text-gray-700 font-medium font-oswald"
                                                 >
                                                     {service}
                                                 </motion.li>

@@ -103,7 +103,7 @@ const NetWork = () => {
                     className="space-y-6 py-20">
                     <div className="border-l-4 border-red-500 pl-3">
                         <motion.h2
-                            className="text-4xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
+                            className="text-3xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
                         >
                             <motion.span
                                 initial={{ x: -100, opacity: 0 }}

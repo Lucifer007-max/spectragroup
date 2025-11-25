@@ -116,7 +116,7 @@ const About = () => {
             className="space-y-6">
             <div className="border-l-4 border-red-500 pl-3">
               <motion.h2
-                className="text-4xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
+                className="text-3xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
               >
                 <motion.span
                   initial={{ x: -100, opacity: 0 }}
@@ -182,7 +182,7 @@ const About = () => {
             <div className="border-l-4 border-red-500 pl-3">
                 <h2 className="text-2xl text-dark font-bold">Our SERVICES</h2> 
               <motion.h2
-                className="text-4xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
+                className="text-3xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
               >
                 <motion.span
                   initial={{ x: -100, opacity: 0 }}
@@ -290,7 +290,7 @@ const About = () => {
             }}
           ></div>
           <motion.h2
-            className="text-4xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none text-center pt-10 md:py-20 lg:pt-20 "
+            className="text-3xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none text-center pt-10 md:py-20 lg:pt-20 "
           >
             <motion.span
               initial={{ x: -100, opacity: 0 }}
@@ -402,7 +402,7 @@ const About = () => {
                   variants={itemAnimation}
                 >
                 <GlowingCard
-                    className={`${service.bgClass} h-[400px] rounded-lg backdrop-blur-sm 
+                    className={`${service.bgClass} md:h-[400px] h-full rounded-lg backdrop-blur-sm 
                 border border-white/10 hover:border-white/20 transition-all duration-500
                 group cursor-pointer overflow-hidden`}
                   >
@@ -415,7 +415,7 @@ const About = () => {
                         {service.icon}
                       </motion.div> */}
                       <motion.h3
-                        className="text-3xl font-bold mb-3"
+                        className="md:text-3xl text-2xl font-bold mb-3"
                         initial={{ opacity: 0.8 }}
                         whileHover={{ opacity: 1, x: 5 }}
                         transition={{ duration: 0.2 }}

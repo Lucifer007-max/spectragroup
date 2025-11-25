@@ -37,7 +37,7 @@ const Expertise = () => {
                     className="space-y-6 py-20">
                     <div className="border-l-4 border-red-500 pl-3">
                         <motion.h2
-                            className="text-4xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
+                            className="text-3xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
                         >
                             <motion.span
                                 initial={{ x: -100, opacity: 0 }}
@@ -102,7 +102,7 @@ const Expertise = () => {
                             {expertiesCards.map((service, index) => (
                                 <motion.div
                                     key={index}
-                                    className={`p-6 rounded-2xl shadow-md ${service.bgClass} ${service.gridClass} h-full flex flex-col`}
+                                    className={`md:p-6 p-2 rounded-2xl shadow-md ${service.bgClass} ${service.gridClass} h-full flex flex-col`}
                                 >
                                     <div className={`${"service.bgClass"} h-full rounded-lg backdrop-blur-sm    transition-all duration-500  group cursor-pointer overflow-hidden`}>
                                         <div className="relative h-full p-6 flex flex-col">
@@ -114,7 +114,7 @@ const Expertise = () => {
                                                 {/* {service.icon} */}
                                             </motion.div>
                                             <motion.h3
-                                                className="text-3xl font-bold mb-3"
+                                                className="md:text-3xl text-2xl font-bold mb-3 font-oswald"
                                                 initial={{ opacity: 0.8 }}
                                                 whileHover={{ opacity: 1, x: 5 }}
                                                 transition={{ duration: 0.2 }}
@@ -191,7 +191,7 @@ const Expertise = () => {
                                                     whileInView={{ opacity: 1, x: 0 }}
                                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                                     viewport={{ once: false }}
-                                                    className="text-md text-gray-700 font-medium"
+                                                    className="text-md text-gray-700 font-medium font-oswald"
                                                 >
                                                     {service}
                                                 </motion.li>
@@ -280,7 +280,7 @@ const Expertise = () => {
                                                     whileInView={{ opacity: 1, x: 0 }}
                                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                                     viewport={{ once: false }}
-                                                    className="text-md text-gray-700 font-medium"
+                                                    className="text-md text-gray-700 font-medium font-oswald"
                                                 >
                                                     {service}
                                                 </motion.li>

@@ -41,35 +41,59 @@ const Contact = () => {
     }
   };
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
+  // const onSubmit = async (event) => {
+  //   event.preventDefault();
+  //   const formData = new FormData(event.target);
 
-    // Append your access key
-    formData.append("access_key", "dda34f32-4509-48cb-a989-f76fd25a1aec");
+  //   // Append your access key
+  //   formData.append("access_key", "dda34f32-4509-48cb-a989-f76fd25a1aec");
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+  //   const object = Object.fromEntries(formData);
+  //   const json = JSON.stringify(object);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
+  //   const res = await fetch("https://api.web3forms.com/submit", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       Accept: "application/json"
+  //     },
+  //     body: json
+  //   }).then((res) => res.json());
 
-    if (res.success) {
-      console.log("Success", res);
-      setShowPopup(true);
-      event.target.reset();
-    } else {
-      console.error("Error", res);
-      // Optionally, show an error message
+  //   if (res.success) {
+  //     console.log("Success", res);
+  //     setShowPopup(true);
+  //     event.target.reset();
+  //   } else {
+  //     console.error("Error", res);
+  //     // Optionally, show an error message
+  //   }
+  // };
+  const onSubmit = async (e) => {
+    e.preventDefault();
+  
+    const formData = new FormData(e.target);
+  
+    try {
+      const response = await fetch("https://spectragroup.ae/send-mail.php", {
+        method: "POST",
+        body: formData
+      });
+  
+      const result = await response.text();
+  
+      if (result.includes("success")) {
+        alert("✅ Message sent successfully!");
+        e.target.reset();
+      } else {
+        alert("❌ Error: " + result);
+      }
+  
+    } catch (err) {
+      alert("❌ Network error: " + err.message);
     }
   };
-
+  
   return (
     <section id="contacts" className="min-h-screen relative overflow-hidden">
       {/* Background Animation */}

@@ -21,6 +21,7 @@ import MultiProductSlider from './card/CardGrid';
 // import GlowingGlobe from './Globe/Globe';
 import banner from '../assets/images/banner.jpg';
 import GlobeComponent from './Globe/Globe';
+import { FormGenius } from "form-genius-lite";
 const Hero = () => {
   const sectionRef = useRef(null)
   const aboutUsRef = useRef(null)
@@ -47,6 +48,94 @@ const Hero = () => {
     }
   }, [isInView, scaleSpring, controls])
   const letters = " ".split("")
+
+  const schema = {
+    "newsletter": {
+      "type": "checkbox",
+      "label": "Subscribe to newsletter",
+      "required": true,
+      "placeholder": "Yes, send me updates",
+      "inputProps": {
+        "className": "w-full px-3 py-2 border border-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+      }
+    },
+    "fullName": {
+      "type": "text",
+      "label": "Full Name",
+      "required": true,
+      "placeholder": "Jane Doe",
+      "inputProps": {
+        "className": "w-full px-3 py-2 border border-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+      }
+    },
+    "lastName": {
+      "type": "text",
+      "label": "Last Name",
+      "required": true,
+      "placeholder": "Doe",
+      "inputProps": {
+        "className": "w-full px-3 py-2 border border-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "placeholder": "you@example.com",
+      "inputProps": {
+        "className": "w-full px-3 py-2 border border-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
+      }
+    },
+    "password": {
+      "type": "password",
+      "label": "Password",
+      "placeholder": "••••••••",
+      "inputProps": {
+        "className": "w-full px-3 py-2 border border-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
+      }
+    },
+    "age": {
+      "type": "number",
+      "label": "Age",
+      "min": 0,
+      "max": 120,
+      "inputProps": {
+        "className": "w-32 px-3 py-2 border border-2 rounded-md focus:outline-none"
+      }
+    },
+    "phone": {
+      "type": "tel",
+      "label": "Phone",
+      "placeholder": "+1 555 555 5555",
+      "inputProps": {
+        "className": "w-full px-3 py-2 border border-2 rounded-md"
+      }
+    },
+    "bio": {
+      "type": "textarea",
+      "label": "Short Bio",
+      "placeholder": "Tell us a bit about yourself",
+      "inputProps": {
+        "className": "w-full h-24 px-3 py-2 border border-2 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      }
+    },
+    "agreeTerms": {
+      "type": "checkbox",
+      "label": "Agree to terms",
+      "inputProps": {
+        "className": "h-4 w-4 text-green-600 rounded border-gray-300"
+      }
+    },
+    "rating": {
+      "type": "range",
+      "label": "Rating",
+      "inputProps": {
+        "min": 0,
+        "max": 10,
+        "className": "w-full"
+      }
+    }
+  };
 
 
   return (
@@ -190,6 +279,9 @@ const Hero = () => {
 
       </section>
 
+        <FormGenius schema={schema} onSubmit={(data) => console.log(data)} /> <br />
+
+
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
@@ -208,7 +300,7 @@ const Hero = () => {
               WHO WE ARE
             </motion.h1>
             <p>
-              Spectra Line Industrial LLC and GeoSpectra Technical Services LLC, with offices in Dubai, UAE, specialize in providing high-end, cost-effective technical solutions and services across a range of industries, including Cement & Coal, Iron & Steel, Oil & Gas, and Minerals. They offer dedicated technical support for analytical instruments such as XRF, XRD, and OES analyzers, as well as Gamma-ray on-line analyzers like PGNAA systems (e.g., Gamma-Metrics, Geoscan). Their services also extend to radiation technology, including the supply of radioactive isotopes, radiation services, and radioactive waste management, along with expert training and application support in mission-critical environments.
+              Spectra Line Industrial LLC and GeoSpectra Technical Services LLC, with offices in Dubai, UAE, specialize in providing high-end, cost-effective technical solutions and services across a range of industries, including Cement & Coal, Iron & Steel, Oil & Gas, and Minerals. They offer dedicated technical support for analytical instruments such as XRF, XRD, and OES analyzers, as well as Gamma-ray on-line analyzers like PGNAA systems. Their services also extend to radiation technology, including the supply of radioactive isotopes, radiation services, and radioactive waste management, along with expert training and application support in mission-critical environments.
             </p>
 
           </motion.div>
@@ -295,7 +387,7 @@ const Hero = () => {
                   variants={itemAnimation}
                 >
                   <GlowingCard
-                    className={`${service.bgClass} h-[400px] rounded-lg backdrop-blur-sm 
+                    className={`${service.bgClass} md:h-[400px] h-full rounded-lg backdrop-blur-sm 
                 border border-white/10 hover:border-white/20 transition-all duration-500
                 group cursor-pointer overflow-hidden`}
                   >
@@ -308,7 +400,7 @@ const Hero = () => {
                         {service.icon}
                       </motion.div>
                       <motion.h3
-                        className="text-3xl font-bold mb-3"
+                        className="md:text-3xl text-2xl font-bold mb-3"
                         initial={{ opacity: 0.8 }}
                         whileHover={{ opacity: 1, x: 5 }}
                         transition={{ duration: 0.2 }}

@@ -2,14 +2,14 @@ import { portfolioItems } from "../utils/data";
 import { motion } from "framer-motion";
 export default function ServicePortfolio() {
   return (
-    <section className="py-12 px-6 text-white">
+    <section className="py-12 md:px-6 px-3 text-white">
       {/* <h2 className="text-3xl font-bold text-center mb-10">
         Our Service Portfolio
       </h2> */}
 
       <div className="border-l-4 border-red-500 pl-3 mb-10">
         <motion.h2
-          className="text-4xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
+          className="text-3xl md:text-6xl sm:text-4xl  lg:text-5xl  font-bold tracking-tighter leading-none "
         >
           <motion.span
             initial={{ x: -100, opacity: 0 }}

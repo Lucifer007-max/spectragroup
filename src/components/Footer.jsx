@@ -10,7 +10,7 @@ const Footer = () => {
   const socialLinks = [
     // { icon: <FaGithub />, url: "#" },
     // { icon: <FaTwitter />, url: "#" },
-    { icon: <FaLinkedin />, url: "https://www.linkedin.com/company/102022235/admin/page-posts/published" },
+    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/spectra-group-of-companies/" },
     // { icon: <FaInstagram />, url: "#" }
   ];
 
@@ -68,6 +68,7 @@ const Footer = () => {
                       <motion.a
                         key={index}
                         href={social.url}
+                        target="_blank"
                         whileHover={{ scale: 1.2, color: '#fff' }}
                         className="text-xl text-light hover:text-primary transition-colors flex"
                       >
